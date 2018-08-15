@@ -1,2 +1,2 @@
 ## Welcome
-![MM](/images/pic-mm.png)
+![MM](/images/pic-mm.jpg)
