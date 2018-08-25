@@ -1,16 +1,19 @@
-body,
-p {
-    margin: 100;
-    background: rgb(174,175,238);
-    background: radial-gradient(circle, rgba(174,175,238,0.5242297602634804) 0%, rgba(148,187,233,0.4457983877144608) 100%);
-  }
-
-h1 {
-    color: white;
-    text-align: center;
+ /* Container holding the image and the text */
+.container {
+    position: relative;
 }
 
-p {
-    font-family: verdana;
-    font-size: 20px;
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+} 
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
