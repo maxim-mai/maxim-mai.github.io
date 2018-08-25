@@ -22,26 +22,32 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:0px">
 
 <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center w3-large">
+<div class="mySlides w3-display-container w3-center fade">
     <img src="images/img-1.jpg" style="width:100%">
        <div class="text-block centered w3-large">
        <h2>&ensp; Maxim Mai &ensp;</h2>
        </div>  
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="mySlides w3-display-container w3-center fade">
     <img src="images/img-2.jpg" style="width:100%">
        <div class="text-block centered">
        <h2>&ensp; Maxim Mai &ensp;</h2>
        </div>
-  </div>
+</div>
+
+
+
+
+
+
 
 <!-- Navbar -->
 <div>
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#research" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESEARCH/PUBLICATION</a>
-    <a href="#teaching" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEACHING/OUTREACH</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESEARCH/PUBLICATION</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEACHING/OUTREACH</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     </div>
   </div>
@@ -50,13 +56,13 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#research" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESEARCH/PUBLICATIONS</a>
-  <a href="#teaching" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEACHING/OUTREACH</a>
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESEARCH/PUBLICATIONS</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEACHING/OUTREACH</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
 </div>
   
-  <!-- ABOUT ME -->
+  <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:800px" id="band">
     
     <div class="w3-row w3-padding-16">
@@ -65,12 +71,10 @@ body {font-family: "Lato", sans-serif}
       </div>
       <div class="w3-twothird">
         <p class="w3-justify">
-        I am a research assistant profesor at <a href="https://physics.columbian.gwu.edu/">The George Washington University</a>. 
-        Previously, I was postdoctorial researcher in the <a href="https://www.hiskp.uni-bonn.de/">HISKP at the University Bonn </a>.
+        I am a research assistant profesor at <a href="https://physics.columbian.gwu.edu/">The George Washington University</a>. Previously I was postdoctorial researcher in the <a href="https://www.hiskp.uni-bonn.de/">HISKP at the University Bonn </a>.
         </p>
         <p class="w3-justify">
-        My research focuses on topics in Quantum Chromodynamics, scattering theory, 
-        resonance physics, Lattice Field Theory, chiral symmetry and machine learning techniques.
+        My research focuses on topics in Quantum Chromodynamics, scattering theory, resonance physics, Lattice Field Theory, chiral symmetry and machine learning techniques.
         </p>
       </div>
     </div>
@@ -92,10 +96,10 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 
-<!-- Footer -->
+<!-- Footer 
 <footer class="w3-container w3-padding-1 w3-center w3-opacity w3-xlarge">
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+  <p class="w3-medium">Ⓒ2018 Maxim Mai with <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>, hosted by github.io</p>
+</footer>-->
 
 <script>
 // Automatic Slideshow - change image every 4 seconds
