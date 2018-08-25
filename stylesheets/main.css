@@ -6,7 +6,7 @@
 /* Bottom right text */
 .text-block {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: #f1f1f1; /* Grey text */
 } 
 
