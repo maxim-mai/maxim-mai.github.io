@@ -3,6 +3,17 @@
     position: relative;
 }
 
+a.blau:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.blau:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 /* Bottom right text */
 .text-block {
     position: absolute;
