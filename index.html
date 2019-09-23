@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<title>Maxim Mai</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheets/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheets/main.css" type="text/css"/>
+<style>
+  body {font-family: "Lato", sans-serif; background-color: white;}
+</style>
+<script>
+function initComparisons() {
+  var x, i;
+  /*find all elements with an "overlay" class:*/
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /*once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function:*/
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /*get the width and height of the img element*/
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /*set the width of the img element to 50%:*/
+    img.style.width = (w / 2) + "px";
+    /*create slider:*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /*insert slider*/
+    img.parentElement.insertBefore(slider, img);
+    /*position the slider in the middle:*/
+    slider.style.top = (h / 3) - (slider.offsetHeight / 3) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /*execute a function when the mouse button is pressed:*/
+    slider.addEventListener("mousedown", slideReady);
+    /*and another function when the mouse button is released:*/
+    window.addEventListener("mouseup", slideFinish);
+    /*or touched (for touch screens:*/
+    slider.addEventListener("touchstart", slideReady);
+    /*and released (for touch screens:*/
+    window.addEventListener("touchstop", slideFinish);
+    function slideReady(e) {
+      /*prevent any other actions that may occur when moving over the image:*/
+      e.preventDefault();
+      /*the slider is now clicked and ready to move:*/
+      clicked = 1;
+      /*execute a function when the slider is moved:*/
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /*the slider is no longer clicked:*/
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /*if the slider is no longer clicked, exit this function:*/
+      if (clicked == 0) return false;
+      /*get the cursor's x position:*/
+      pos = getCursorPos(e)
+      /*prevent the slider from being positioned outside the image:*/
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /*execute a function that will resize the overlay image according to the cursor:*/
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = e || window.event;
+      /*get the x positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x coordinate, relative to the image:*/
+      x = e.pageX - a.left;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /*resize the image:*/
+      img.style.width = x + "px";
+      /*position the slider:*/
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+</script>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<body>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%% Navbar %%%%%%%%%%%%%%%%%%%%%%%%% -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>MAXIM MAI</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#research" class="w3-bar-item w3-button">Research</a>
+      <a href="#teaching" class="w3-bar-item w3-button">Teaching</a>
+      <a href="#outreach" class="w3-bar-item w3-button">Outreach</a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%% WELCOME %%%%%%%%%%%%%%%%%%%%%%%% -->
+<br>
+<br>
+ <div class="container">
+  <img src="images/Maxim-5.jpg" alt="Notebook" style="width:100%;">
+    <div class="content">
+    <p>
+    <b>Welcome to my homepage!</b>
+    <br>
+    I am an assistant research profesor at <a href="https://physics.columbian.gwu.edu/">The George Washington University</a>. Previously I was a postdoctoral researcher in the <a href="https://www.hiskp.uni-bonn.de/">HISKP at the University Bonn</a>. Below you can find more about my resarch and teaching materials or you can contact me if you have questions:
+    <br>
+    <i class="fa fa-envelope"   style="width:30px"> </i>maximmai@gwu.edu<br>
+    <i class="fa fa-phone"      style="width:30px"> </i>+1 202 9949265<br>
+    <i class="fa fa-map-marker" style="width:30px"> </i>Corcoran Hall, 725 21st NW, Washington, DC</p>
+    </div>
+</div>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%% Research %%%%%%%%%%%%%%%%%%%%%%%% -->
+<br>
+ <div class="container">
+<div class="w3-container" style="max-width:100%;font-size:14px;" id="research">
+<br>
+<br>
+<br>
+<h3>Research</h3>
+
+<p>
+Strong interaction is one of the four <a target="_blank" class="blau" href="https://en.wikipedia.org/wiki/Fundamental_interaction"><b>fundamental forces of nature</b></a>. Quantum effects but also relativity are crucial for the understanding of strongly interacting particles -- <b>hadrons</b> such as protons, etc.. The way to reconcile both is the so-called Quantum Field Theory, which for the strong interaction is called <a target="_blank" class="blau" href="https://en.wikipedia.org/wiki/Quantum_chromodynamics"><b>Quantum Chromodynamics</b></a> (<b>QCD</b>).
+
+<br><br>
+This theory has several unusual properties rooted deeply in its non-trivial mathematical structure. For example, protons are build up of 3 quarks, but have a mass hundred times larger than the sum of quark masses. Thus, the largest part of our mass and that of all visible Universe -- is due to QCD.
+
+<br><br>
+Hadrons don't exist only in the ground state but can be excited in e.g. scattering experiments. Such excited states decay very quickly, but the pattern of their existance and appearance is probably our best clue in understanding the QCD. The summary of our current knowledge about these and other states of matter is collected by the <a target="_blank" class="blau" href="http://pdglive.lbl.gov/Viewer.action"><b>Particle Data Group</b></a>.
+
+<br><br>
+Unraveling the pattern of excited hadrons is the golden thread through my research, connecting methods from S-matrix theory, effective field theories, numerical techniques of Lattice QCD, statistics, etc.. The links below will lead you to my publications available as open source aricles on <a target="_blank" class="blau" href="https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22maxim+mai%22&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first"><b>arXiv</b></a>. Some selected talks on corresponding topics give a broader picture on each topic.
+
+
+<hr><!-- %%%%%%%%%%% Lattice %%%%%%%%%%%%%% -->
+
+
+<h6>-- Lattice QCD --</h6>
+
+Hadron spectroscopy from QCD is currently only accesible within the Lattice QCD. There in large-scale numerical calculations, hadrons and intereactions thereof can be studies in scenarios which may even be inaccessible by the experiments. Thus, Lattice QCD is more than a complementing tool to experiments but truly a theoretical framework to QCD (?link?).
+
+<br><br>
+Lattice computations are necesarily performed on discretized Eucledean space time in a finite box. Both these technical limitations needs to be lifted when comparing the results of Lattice QCD with phenomenological observations. The discretization effects are well under controll, dealt with continuum extrapolations. Mathematically more intricate and interesting effects arise from the finitness of the lattice setup -- the so-called <b>finite volume effects</b>. At the core, the issue is that a finite coordinate space induces the need for boundary conditions. This induces the discretization of the momentum-space and the spectrum of the QCD Hamiltonian.
+
+<div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="images/INFVOL.jpg" width="300" height="200">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="images/FINVOL.jpg" width="300" height="200">
+  </div>
+</div>
+<script>
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
+</script>
+
+<br><br>
+The so-called quantization condition aims to bridge these two worlds -- finite and infinite volume results. While the general form of such condition is not known, there is a large interest in understanding three hadrons in the finite volume. This will open the door to tackle several puzzles of modern hadron physics. Recent international workshop dedicated to this area of research has been held at the Bethe-Center in for Theoretical Physics in Bonn (Germany) - <a target="_blank" class="blau" href="https://indico.hiskp.uni-bonn.de/event/2/page/2-home"><i>"Multihadron Dynamics in a Box"</i></a>.
+In recent years, I have worked on the derivation of <b>three-body quantization condition</b>, the corresponding infinite-volume amplitude, and applications to physical three-body systems calculated on the lattice:
+
+<div class="w3-center">
+  <br>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1681944>
+  <i>``Finite-volume spectrum of &pi;<sup>+</sup>&pi;<sup>+</sup> and &pi;<sup>+</sup>&pi;<sup>+</sup>&pi;<sup>+</sup> systems''
+  </i>
+  </a> (2018)
+  <!--M. Mai, M. Doring-->
+
+  <br>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1654348>
+  <i>``Three-body spectrum in a finite volume: the role of cubic symmetry''
+  </i>
+  </a> (2018)
+  <!--M. Doring, H.W. Hammer, M. Mai, J.Y. Pang, A. Rusetsky, J. Wu-->
+
+  <br>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1625299>
+  <i>``Three-body Unitarity in the Finite Volume''
+  </i>
+  </a>(2017)
+  <!--M. Mai, M. Doring-->
+
+  <br>
+    <a target="_blank" class="blau" href=http://inspirehep.net/record/1606089>
+      <i>``Three-body Unitarity with Isobars Revisited''</i>
+    </a>(2017)
+  <!--M. Mai, B. Hu, M. Doring, A. Pilloni, A. Szczepaniak-->
+</div>
+
+Additionally, I am very interested in the devolopment of alternative techniques for the infinite volume mapping, such as the complex extrapolation of the optical potential:
+
+<br><br>
+<div class="w3-center">
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1432704>
+  <i>``The Optical Potential on the Lattice''
+  </i>
+  </a>(2016)
+  <!--D. Agadjanov, M. Doring, M. Mai, U.-G. Mei&szlig;ner and A. Rusetsky-->
+</div>
+
+<br>
+In many lattice calculations the pion mass is higher than the physical one for performance reasons. This technicality needs to be overcome (in addition to infinite volume mapping and continumm extrapolations) when comparing lattice results to the physical ones. Chiral Perturbation Theory (see below) dictates the pion mass dependence of QCD Green's functions allowing for the so-called <b>chiral extrapolations</b>. In this context, I have studied several physical systems with and without resonances:
+
+<div class="w3-center">
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1659102>
+  <i>``Extraction of isoscalar &pi;&pi; phase-shifts from lattice QCD''
+  </i>
+  </a>(2018)
+  <!--D. Guo, A. Alexandru, R. Molina, M. Mai, M. Doring-->
+
+  <br>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1613522>
+  <i>``Chiral symmetry constraints on resonant amplitudes''
+  </i>
+  </a>(2017)
+  <!--P. C. Bruns and M. Mai-->
+
+  <br>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1593771>
+  <i>``Chiral Extrapolations of the &rho;(770) Meson in N<sub>f</sub>=2+1 Lattice QCD Simulations''
+  </i>
+  </a>(2017)
+  <!--B. Hu, R. Molina, M. Doring, M. Mai, A. Alexandru-->
+
+  <br>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1495259>
+  <i>``Chiral Extrapolation of the Sigma Resonance''
+  </i>
+  </a>(2016)
+  <!--M. Doring, B. Hu and M. Mai-->
+
+  <br>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1219963>
+  <i>``Finite volume effects and quark mass dependence of the N(1535) and N(1650)''
+  </i>
+  </a>(2013)
+  <!--M. Doring, M. Mai and U.-G. Mei&szlig;ner-->
+</div>
+
+
+<br>
+Selected talks for more details and references:
+<a target="_blank" class="blau" href="/Talks/MM-seminar-umd-10_2018.pdf">
+<strong>
+Unitarity constraints on 3 hadron dynamics
+</strong>
+</a>
+(Seminar talk at U. of Maryland, 2018);
+<a target="_blank" class="blau" href="/Talks/MM-Lattice2018.pdf">
+<strong>
+Application of 3-body quantization condition to QCD
+</strong>
+</a>
+(Conference talk at Lattice 2018);
+<a target="_blank" class="blau" href="/Talks/MM-3b-CERN.pdf">
+<strong>
+3 body quantization condition from unitarity
+</strong>
+</a>
+(Seminar talk at CERN, 2017);
+<a target="_blank" class="blau" href="/Talks/MM-LATTICE16.pdf">
+<strong>
+Retrieving the optical potential from lattice simulation
+</strong>
+</a>
+(Conference talk at Lattice 2016).
+
+
+
+<hr><!-- %%%%%%%%%%% Resonances %%%%%%%%%%%%%% -->
+
+
+<h6>-- Resonances --</h6>
+
+
+
+
+
+
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/1672921>
+<i>``S- and p-wave structure of S=-1 meson-baryon scattering in the resonance region''
+</i>
+</a>
+<!--D. Sadasivan, M. Mai, M. Doring-->
+
+<br>
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/1610307>
+<i>``Strange Hadron Spectroscopy with a Secondary KL Beam at GlueX''
+</i>
+</a>
+<!--S. Adhikari et al.-->
+
+<br>
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/1426708>
+<i>``On the pole content of coupled channels chiral approaches used for the KbarN system''
+</i>
+</a>
+<!--A. Cieply, M. Mai, U.-G. Mei&szlig;ner and J. Smejkal-->
+
+<br>
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/1351447>
+<i>``Predictions for the &Lambda;<sub>b</sub> &rarr; J/&psi;&Lambda;(1405) decay''
+</i>
+</a>
+<!--L. Roca, M. Mai, E. Oset and U.-G. Mei&szlig;ner-->
+
+<br>
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/1415597>
+<i>``Weak decays of heavy hadrons into dynamically generated resonances''
+</i>
+</a>
+<!--E. Oset et al.-->
+
+<br>
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/1331405>
+<i>``Constraints on the chiral unitary KbarN amplitude from &pi;&Sigma;K<sup>+</sup> photoproduction data''
+</i>
+</a>
+<!--M. Mai and U.-G. Mei&szlig;ner-->
+
+<br>
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/1088619>
+<i>``New insights into antikaon-nucleon scattering and the structure of the Lambda(1405)''
+</i>
+</a>
+<!--M. Mai and U.-G. Mei&szlig;ner-->
+
+
+<br><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;
+<i class="fa fa-users" style="width:14px"> </i>
+<a target="_blank" class="blau" href="/Talks/MM-ptalk-NSTAR2017.pdf">
+<strong>
+Status of the Lambda(1405)
+</strong>
+</a>
+(Plenary talk at NSTAR2017)
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;
+<i class="fa fa-users" style="width:14px"> </i>
+<a target="_blank" class="blau" href="/Talks/MM-Valencia.pdf">
+<strong>
+Chiral unitary KN amplitude vs photoproduction data
+</strong>
+</a>
+(Seminar talk at U. Valencia)
+
+
+
+              <hr>
+
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/1385763>
+<i>``&theta;-dependence of the lightest meson resonances in QCD''
+</i>
+</a>
+<!--N. R. Acharya, F. K. Guo, M. Mai and U.-G. Mei&szlig;ner-->
+
+<br>
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/1123381>
+<i>``Pion photoproduction off the proton in a gauge-invariant chiral unitary framework''
+</i>
+</a>
+<!--M. Mai, P. C. Bruns and U.-G. Mei&szlig;ner-->
+
+<br>
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/924843>
+<i>``&eta;-Photoproduction in a gauge-invariant chiral unitary framework''
+</i>
+</a>
+<!--D. Rui\'c, M. Mai and U.-G. Mei&szlig;ner-->
+
+<br>
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/880916>
+<i>``Chiral dynamics of the S11(1535) and S11(1650) resonances revisited''
+</i>
+</a>
+<!--P. C. Bruns, M. Mai and U.-G. Mei&szlig;ner-->
+
+<br><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;
+<i class="fa fa-users" style="width:14px"> </i>
+<a target="_blank" class="blau" href="/Talks/MM-NSTAR2013.pdf">
+<strong>
+Pion photoproduction in gauge invariant unitary approach
+</strong>
+</a>
+(Confrence talk at NSTAR 2013)
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;
+<i class="fa fa-users" style="width:14px"> </i>
+<a target="_blank" class="blau" href="/Talks/MM-BSE.pdf">
+<strong>
+Coupled-channel Bethe-Salpeter approach
+</strong>
+</a>
+(Seminar talk at U. Bonn)
+
+
+
+              <hr>
+
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/1328672>
+<i>``Recoil corrections in antikaon-deuteron scattering''
+</i>
+</a>
+<!--M. Mai, V. Baru, E. Epelbaum and A. Rusetsky-->
+
+
+<br>
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=http://inspirehep.net/record/820717>
+<i>``Aspects of meson-baryon scattering in three and two-flavor chiral perturbation theory''
+</i>
+</a>
+<!--M. Mai, P. C. Bruns, B. Kubis and U.-G. Mei&szlig;ner-->
+
+
+<br><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;
+<i class="fa fa-users" style="width:14px"> </i>
+<a target="_blank" class="blau" href="/Talks/MM-AntiKd_scattering.pdf">
+<strong>
+Recoil corrections in antikaon-deuteron scattering
+</strong>
+</a>
+(Conference talk at Few Body 2015)
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;
+<i class="fa fa-users" style="width:14px"> </i>
+<a target="_blank" class="blau" href="/Talks/MM-HISKP-seminar2010.pdf">
+<strong>
+Meson-baryon scattering in SU(3) ChPT
+</strong>
+</a>
+(Seminar talk at U. Bonn)
+
+<br>
+<br>
+</p>
+</div>
+</div>
+
+<br>
+
+
+
+
+
+
+
+<!-- BEGIN: Teaching -->
+<div class="w3-container w3-content w3-padding-10" style="max-width:700px; background-color: white;margin:2px; font-size:15px" id="teaching">
+<h3>Teaching/Outreach</h3>
+
+<h7>
+<i class="fa fa-graduation-cap" style="width:30px"> </i>
+<strong>Fall Semester 2017</strong> - Graduate course on Quantum Field Theory (w. H. Griesshammer and M. Doring). Self-learning following Peskin/Schroeder: mind-atlas (collection of mind-maps) follows...
+</i></a>
+<br>
+
+<i class="fa fa-users" style="width:30px"> </i>
+<a target="_blank" class="blau" href="Talks/MM-Entropy-Riozome.pdf">
+<i><u><strong>Talk on entropy
+</i></u></strong></a> at
+<a target="_blank" href="http://www.rhizomedc.org/new-events/2017/11/2/entropy">RHIZOME DC</a>
+<br>
+
+<i class="fa fa-graduation-cap" style="width:30px"> </i>
+<strong>Nuclear Journal Club</strong> -
+<a target="_blank" class="blau" href="https://nuclear.voxcharta.org/">
+<i><u>GW voxcharta page</a>
+
+
+
+<br>
+<br>
+</h7>
+
+</div>
+
+
+
+
+
+  <br>
+  <br>
+
+</div>
+
+
+
+<!--BEGIN: Footer -->
+<footer class="w3-container w3-padding-1 w3-center w3-xlarge" style="margin:2px;">
+  <p class="w3-medium">Ⓒ2018 by Maxim Mai
+  created with
+  <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">
+  w3.css</a> and hosted by
+  <a href="https://github.com/" target="_blank">github.com</a>
+  </p>
+</footer>
+<!--END: Footer -->
+
+
+
+
+
+
+
+
+
+<!-- ==========SCRIPTS============ -->
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
+}
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction1() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
