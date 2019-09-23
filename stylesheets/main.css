@@ -1,15 +1,70 @@
  /* Container holding the image and the text */
 .container {
-    position: relative;
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
 }
 
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 30px;
+  height: 160px;
+  background-color: #2196F3;
+  opacity: 0.8;
+  border-radius: 1%;
+}
+
+.content {
+  position: absolute; /* Position the background text */
+  right: 0px;
+  bottom: 0px; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(999, 999, 999, 0.8); /* Black background with 0.5 opacity */
+  color: rgba(0,0,0, 0.9); /* Grey text */
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */
+  alignment: right;
+}
+
+
+@media (min-width:601px){
+.content{
+  background: rgba(999, 999, 999, 0.3);
+  width:49.999%;
+  right: 0px;
+  top: 40px;
+  bottom: auto}
+
+
 a.blau:link {
-    color: green;
+    color: navy;
     background-color: transparent;
     text-decoration: none;
 }
 a.blau:visited {
-    color: green;
+    color: navy;
     background-color: transparent;
     text-decoration: none;
 }
@@ -19,7 +74,7 @@ a.blau:visited {
     position: absolute;
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: #f1f1f1; /* Grey text */
-} 
+}
 
 /* Centered text */
 .centered {
@@ -30,23 +85,6 @@ a.blau:visited {
 }
 
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
  /* Style the navigation menu */
 .topnav {
@@ -63,9 +101,9 @@ a.blau:visited {
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 14px 16px;
+  padding: 8px 12px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 12px;
   display: block;
 }
 
@@ -88,14 +126,14 @@ a.blau:visited {
 .active {
   background-color: black;
   color: white;
-} 
+}
 
 /* Style the active link (or home/logo) */
 .name {
   background-color: black;
   color: white;
-  padding: 14px 16px;
+  padding: 8px 12px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
   display: block;
-} 
+}
