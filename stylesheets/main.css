@@ -5,17 +5,19 @@
   margin: 0 auto; /* Center it */
 }
 
+
+/* %%%%%%%%%%%%%%%%%%%%%% SLIDER %%%%%%%%%%%%%%%%%%%%%% */
 * {box-sizing: border-box;}
 
 .img-comp-container {
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  height: 240px; /*should be the same height as the images*/
 }
 
 .img-comp-img {
   position: absolute;
   width: auto;
-  height: auto;
+  height: 240px;
   overflow: hidden;
 }
 
@@ -30,32 +32,38 @@
   cursor: ew-resize;
   /*set the appearance of the slider:*/
   width: 30px;
-  height: 160px;
+  height: 200px;
   background-color: #2196F3;
   opacity: 0.8;
   border-radius: 1%;
 }
+/* %%%%%%%%%%%%%%%%%%%%%% END SLIDER %%%%%%%%%%%%%%%%%%%%%% */
 
+
+
+/* %%%%%%%%%%%%%%%%%%%%%% header %%%%%%%%%%%%%%%%%%%%%% */
 .content {
   position: absolute; /* Position the background text */
   right: 0px;
+  top: 250px;
   bottom: 0px; /* At the bottom. Use top:0 to append it to the top */
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(999, 999, 999, 0.8); /* Black background with 0.5 opacity */
   color: rgba(0,0,0, 0.9); /* Grey text */
   width: 100%; /* Full width */
   padding: 10px; /* Some padding */
-  alignment: right;
+  alignment: below;
 }
-
 
 @media (min-width:601px){
 .content{
+  position: absolute;
   background: rgba(999, 999, 999, 0.3);
   width:49.999%;
   right: 0px;
-  top: 40px;
-  bottom: auto}
+  top: 80px;
+  bottom: auto;}
+/* %%%%%%%%%%%%%%%%%%%%%% end header %%%%%%%%%%%%%%%%%%%%%% */
 
 
 a.blau:link {
