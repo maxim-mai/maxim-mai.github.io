@@ -37,6 +37,17 @@
   opacity: 0.8;
   border-radius: 1%;
 }
+
+.chart-img {
+  width: 330px;
+}
+
+@media (min-width:601px){
+  .chart-img {
+    width: 400px;
+  }
+}
+
 /* %%%%%%%%%%%%%%%%%%%%%% END SLIDER %%%%%%%%%%%%%%%%%%%%%% */
 
 
