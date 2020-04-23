@@ -43,11 +43,6 @@
 
 /* %%%%%%%%%%%%%%%%%%%%%% header %%%%%%%%%%%%%%%%%%%%%% */
 .content {
-  position: absolute; /* Position the background text */
-  right: 0px;
-  top: 250px;
-  bottom: 0px; /* At the bottom. Use top:0 to append it to the top */
-  background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(999, 999, 999, 0.8); /* Black background with 0.5 opacity */
   color: rgba(0,0,0, 0.9); /* Grey text */
   width: 100%; /* Full width */
