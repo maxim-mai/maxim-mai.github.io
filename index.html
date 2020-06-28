@@ -118,6 +118,9 @@ function initComparisons() {
     </div>
   </div>
 </div>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
 
 
 
@@ -128,9 +131,12 @@ function initComparisons() {
   <img src="content/Maxim-5.jpg" alt="Notebook" style="width:100%;">
     <div class="content">
     <p>
-    <b>Hi and welcome to my homepage!</b>
+    <b>Hello and welcome to my homepage!</b>
     <br>
-    I aam Maxim Mai, an assistant research professor in nuclear theory at <a href="https://physics.columbian.gwu.edu/">The George Washington University</a>. Previously I was a postdoctoral researcher at the <a href="https://www.hiskp.uni-bonn.de/">HISKP at the University Bonn</a>. Below you can find more about my research and teaching materials or you can contact me:
+    I am Maxim Mai, an assistant research professor in nuclear
+    theory at <a href="https://physics.columbian.gwu.edu/">
+    The George Washington University</a>. Previously I was a
+    postdoctoral researcher at the <a href="https://www.hiskp.uni-bonn.de/">HISKP at the University Bonn</a>. Below you can find more about my research and teaching materials or you can contact me:
     <br>
     <i class="fa fa-envelope"   style="width:30px"> </i>maximmai@gwu.edu<br>
     <i class="fa fa-phone"      style="width:30px"> </i>+1 202 9949265<br>
@@ -140,50 +146,28 @@ function initComparisons() {
 
 <hr><!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
+
+
+
+
+
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%% Research %%%%%%%%%%%%%%%%%%%%%%%% -->
  <div class="container">
 <div class="w3-container" style="max-width:100%;font-size:14px;text-align: justify;" id="research">
 <br>
 <br>
 <br>
-<h3>Research</h3>
+<h1>Research</h1>
 
 <p>
-Strong interaction is one of the four <a target="_blank" class="blau" href="https://en.wikipedia.org/wiki/Fundamental_interaction"><b>fundamental forces of nature</b></a>. Quantum effects but also relativity are crucial for the understanding of strongly interacting particles -- <b>hadrons</b> such as protons, etc.. The way to reconcile both is the so-called Quantum Field Theory, which for the strong interaction is called <a target="_blank" class="blau" href="https://en.wikipedia.org/wiki/Quantum_chromodynamics"><b>Quantum Chromodynamics</b></a> (<b>QCD</b>).
-
-<br><br>
-This theory has several unusual properties rooted deeply in its non-trivial mathematical structure. For example, protons are build up of 3 quarks, but have a mass hundred times larger than the sum of quark masses. Thus, the largest part of our mass and that of all visible Universe -- is due to QCD.
-
-<br><br>
-Hadrons don't exist only in the ground state but can be excited in e.g. scattering experiments. Such excited states decay very quickly, but the pattern of their existence and appearance is probably our best clue in understanding the QCD. The summary of our current knowledge about these and other states of matter is collected by the <a target="_blank" class="blau" href="http://pdglive.lbl.gov/Viewer.action"><b>Particle Data Group</b></a>.
-
-<br><br>
-Unraveling the pattern of excited hadrons is the golden thread through my research, connecting methods from S-matrix theory, effective field theories, numerical techniques of Lattice QCD, statistics, etc.. The links below will lead you to my publications available as open source articles on <a target="_blank" class="blau" href="https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22maxim+mai%22&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first"><b>arXiv</b></a>. Some selected talks on corresponding topics give a broader picture on each topic.
-</p>
-
-<hr><!-- %%%%%%%%%%% Lattice %%%%%%%%%%%%%% -->
-
-<h6>-- Lattice QCD --</h6>
-
-<p>
-Hadron spectroscopy from QCD is currently only accessible  within the Lattice Gauge Theory. There, in large-scale numerical calculations, hadrons and interactions  thereof can be studies in scenarios which may even be inaccessible by the experiments. Thus, Lattice QCD is more than a complementing tool to experiments but truly a theoretical framework to QCD.
-
-<br><br>
-Lattice computations are necessarily performed on discretized Eucledean space time in a finite box. Both these technical limitations needs to be lifted when comparing the results of Lattice QCD with phenomenological observations. The discretization effects are well under control, dealt with continuum extrapolations. Mathematically more intricate and interesting effects arise from the finiteness  of the lattice setup -- the so-called <b>finite volume effects</b>. At the core, the issue is that a finite coordinate space induces the need for boundary conditions. This induces the discretization of the momentum-space and the spectrum of the QCD Hamiltonian -- see figure below.
-</p>
-
-</div>
-</div>
-
-
-
- <div class="container">
-<div class="w3-container" style="max-width:100%;font-size:14px;text-align: center;">
-<!-- %%%%%%%%%%%%%%%%%%%%%  SLIDER %%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+Strong interaction is one of the four <a target="_blank" class="blau"
+href="https://en.wikipedia.org/wiki/Fundamental_interaction">
+<b>fundamental forces of nature</b></a>. Strongly interacting particles are called <b>hadrons</b> such as protons, neutrons, pions, etc.. Similarly to the excitations of atoms (see visible spectrum of hydrogen below) hadrons do not exist only in the ground state but can be excited in scattering or production experiments.
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <figure style="
   float: center;
   max-width: 800px;
-  width: 90%;
+  width: 95%;
   text-align: center;
   font-style: italic;
   font-size: smaller;
@@ -192,30 +176,53 @@ Lattice computations are necessarily performed on discretized Eucledean space ti
   margin: 1em;
   padding: 0.5em;">
 
-  <div class="img-comp-container">
-    <div class="img-comp-img">
-      <img src="content/INFVOL.jpg" class="chart-img">
-    </div>
-    <div class="img-comp-img img-comp-overlay">
-      <img src="content/FINVOL.jpg" class="chart-img">
-    </div>
-  </div>
-
-  <script>
-    /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
-    initComparisons();
-  </script>
-
-  <figcaption> Two-pion scattering amplitude <b>T</b> in finite and infinite volume.
-    <u>In finite volume:</u> It is a real-valued and singular function of interaction energy. Position of the poles corresponds
-    to the energy eigenvalues to be measured in a corresponding lattice setup.
-    <u>In infinte volume:</u> It is an analytic complex valued function of energy. Its squared value is proportional to
-    experimentally accessible quantities. Extrapolating to complex energies universal properties of resonances can
-    be extracted. --
-    <b>Pull the blue bar to switch between both "worlds". X-axis denotes the scattering energy in terms of the pion mass.
-      </b></figcaption>
+  <img src="content/Hydrogen_spectrum_visible.png" width="95%">
+  <figcaption>Visible spectrum of Hydrogen [<a target="_blank"
+  class="blau"
+  href=https://en.wikipedia.org/wiki/Hydrogen>Wikipedia</a>]</figcaption>
 </figure>
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+The excited hadrons decay very quickly into enrgetically lower states. But the pattern of their existence and appearance is universal and probably our best clue in understanding of the strong interaction and the origin of matter. The summary of humanitiy's current state of knowledge is collected by the <a target="_blank" class="blau" href="http://pdglive.lbl.gov/Viewer.action"><b>Particle Data Group</b></a>.
+
+
+Quantum effects but also relativity are crucial for the understanding of hadrons. The way to reconcile both is the so-called Quantum Field Theory, which for the strong interaction is called <a target="_blank" class="blau"
+href="https://en.wikipedia.org/wiki/Quantum_chromodynamics">
+<b>Quantum Chromodynamics (<b>QCD</b>)</b></a>.
+
+<br><br>
+This theory has several unusual properties rooted in its non-trivial mathematical structure. For example, protons are build up of 3 quarks, but have a mass hundred times larger than the sum of quark masses. Thus, the largest part of our mass and that of all visible Universe -- is due to QCD.
+Unraveling the pattern of excited hadrons is the golden thread through my research, connecting methods from S-matrix theory, effective field theories, numerical techniques of Lattice QCD, statistics, etc.. The links below will lead you to my publications available as open source articles on
+<a target="_blank" class="blau" href="https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22maxim+mai%22&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first"><b>arXiv</b></a>. Some selected talks on corresponding topics give a broader picture on each topic.
+</p>
+
+
+
+<hr><!-- %%%%%%%%%%% Lattice %%%%%%%%%%%%%% -->
+
+<h3>Lattice QCD</h3>
+
+<p>
+Hadron spectroscopy from QCD is currently only accessible
+within the Lattice Gauge Theory. There, in large-scale
+numerical calculations, hadrons and interactions  thereof
+can be studies in scenarios which may even be inaccessible
+by the experiments. Thus, Lattice QCD is more than a complementing
+tool to experiments but truly a theoretical framework to QCD.
+
+<br><br>
+Lattice computations are necessarily performed on discretized
+Eucledean space time in a finite box. Both these technical
+limitations need to be lifted when comparing the results of
+Lattice QCD with phenomenological observations. The discretization
+effects are well under control, dealt with continuum extrapolations.
+Mathematically more intricate and interesting effects arise from
+the finiteness  of the lattice setup -- the so-called <b>finite
+volume effects</b>. At the core, the issue is that a finite
+coordinate space induces the need for boundary conditions, which
+induces the discretization of the momentum-space and the spectrum
+of the QCD Hamiltonian -- see figure below.
+</p>
 
 </div>
 </div>
@@ -223,21 +230,84 @@ Lattice computations are necessarily performed on discretized Eucledean space ti
 
 
 <div class="container">
-<div class="w3-container" style="max-width:100%;font-size:14px;text-align: justify;">
+  <div class="w3-container" style="max-width:100%;font-size:14px;text-align: center;">
+  <!-- %%%%%%%%%%%%%%%%%%%%%  SLIDER %%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <figure style="
+      float: center;
+      max-width: 800px;
+      width: 90%;
+      text-align: center;
+      font-style: italic;
+      font-size: smaller;
+      text-indent: 0;
+      border: thin silver solid;
+      margin: 1em;
+      padding: 0.5em;">
+
+      <div class="img-comp-container">
+        <div class="img-comp-img">
+        <img src="content/INFVOL.jpg" class="chart-img">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+        <img src="content/FINVOL.jpg" class="chart-img">
+        </div>
+      </div>
+
+      <script>
+        /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+        initComparisons();
+      </script>
+
+      <figcaption>
+        Two-pion scattering amplitude <b>T</b> in finite and infinite volume. <u>In finite volume:</u> It is a real-valued and singular function of interaction energy. Position of the poles corresponds to the energy eigenvalues to be measured in a corresponding lattice setup. <u>In infinte volume:</u> It is an analytic complex valued
+        function of energy. Its squared value is proportional to experimentally accessible quantities. Extrapolating to complex
+        energies universal properties of resonances can be extracted. --
+        <b>Pull the blue bar to switch between both "worlds". X-axis
+        denotes the scattering energy in terms of the pion mass.
+        </b>
+      </figcaption>
+    </figure>
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+  </div>
+</div>
+
+
+
+<div class="container">
+<div class="w3-container" style="max-width:100%;font-size:14px;
+text-align: justify;">
 
 <p>
-The so-called quantization condition aims to bridge these two worlds -- finite and infinite volume results. While the general form of such condition is not known, there is a large interest in understanding three hadrons in the finite volume. This will open the door to tackle several puzzles of modern hadron physics. Recent international workshop dedicated to this area of research has been held at the Bethe-Center in for Theoretical Physics in Bonn (Germany) - <a target="_blank" class="blau" href="https://indico.hiskp.uni-bonn.de/event/2/page/2-home"><i>"Multihadron Dynamics in a Box"</i></a>.
-In recent years, I have worked on the derivation of <b>three-body quantization condition</b>, the corresponding infinite-volume amplitude, and applications to physical three-body systems calculated on the lattice:
+The so-called quantization condition aims to bridge these
+two worlds -- finite and infinite volume results. While the
+general form of such condition is not known, there is a large
+interest in understanding three hadrons in the finite volume.
+This will open the door to tackle several puzzles of modern
+hadron physics. Recent international workshop dedicated to
+this area of research has been held at the Bethe-Center in
+for Theoretical Physics in Bonn (Germany) -
+<a target="_blank" class="blau"
+href="https://indico.hiskp.uni-bonn.de/event/2/page/2-home"><i>"
+Multihadron Dynamics in a Box"</i></a>.
+In recent years, I have worked on the derivation of <b>three-body
+quantization condition</b>, the corresponding infinite-volume
+amplitude, and applications to physical three-body systems
+calculated on the lattice:
 
-<!-- %%%%%%%%%%%%%%%%%%%%%% -->
-<div class="w3-center">
 
+
+<!-- PAPERS -->
+<div class="w3-left">
+
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1753707>
   <i>``Three-body unitarity versus finite-volume &pi;<sup>+</sup>&pi;<sup>+</sup>&pi;<sup>+</sup> spectrum from lattice QCD''
   </i>
   </a> (2019)
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1681944>
   <i>``Finite-volume spectrum of &pi;<sup>+</sup>&pi;<sup>+</sup> and &pi;<sup>+</sup>&pi;<sup>+</sup>&pi;<sup>+</sup> systems''
   </i>
@@ -245,6 +315,7 @@ In recent years, I have worked on the derivation of <b>three-body quantization c
   <!--M. Mai, M. Doring-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1654348>
   <i>``Three-body spectrum in a finite volume: the role of cubic symmetry''
   </i>
@@ -252,6 +323,7 @@ In recent years, I have worked on the derivation of <b>three-body quantization c
   <!--M. Doring, H.W. Hammer, M. Mai, J.Y. Pang, A. Rusetsky, J. Wu-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1625299>
   <i>``Three-body Unitarity in the Finite Volume''
   </i>
@@ -259,29 +331,46 @@ In recent years, I have worked on the derivation of <b>three-body quantization c
   <!--M. Mai, M. Doring-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
     <a target="_blank" class="blau" href=http://inspirehep.net/record/1606089>
       <i>``Three-body Unitarity with Isobars Revisited''</i>
     </a>(2017)
   <!--M. Mai, B. Hu, M. Doring, A. Pilloni, A. Szczepaniak-->
 </div>
-<!-- %%%%%%%%%%%%%%%%%%%%%% -->
+<!-- PAPERS -->
 
 <br>
-Additionally, I am very interested in the development  of alternative techniques for the infinite volume mapping, such as the complex extrapolation of the optical potential:
+<br>
+<br>
+<br>
+<br>
+<br>
+Additionally, I am very interested in development and applications
+of alternative techniques for the infinite volume mapping,
+such as the complex extrapolation of the optical potential:
 
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
-<div class="w3-center">
+<div class="w3-left">
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1432704>
-  <i>``The Optical Potential on the Lattice''
-  </i>
+  <i>``The Optical Potential on the Lattice''</i>
   </a>(2016)
   <!--D. Agadjanov, M. Doring, M. Mai, U.-G. Mei&szlig;ner and A. Rusetsky-->
 </div>
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
 
 <br>
-In many lattice calculations the pion mass is higher than the physical one for performance reasons. This technicality needs to be overcome (in addition to infinite volume mapping and continuum extrapolations) when comparing lattice results to the physical ones. Chiral Perturbation Theory (see below) dictates the pion mass dependence of QCD Green's functions allowing for the so-called <b>chiral extrapolations</b>.
+<br>
+<br>
+<br>
+In many lattice calculations the pion mass is higher than the
+physical one for performance reasons. This technicality needs to
+be overcome (in addition to infinite volume mapping and continuum
+extrapolations) when comparing lattice results to the physical ones.
+Chiral Perturbation Theory (see below) dictates the pion mass
+dependence of QCD Green's functions allowing for the so-called <b>chiral
+extrapolations</b>.
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <figure style="
   float: center;
@@ -302,21 +391,24 @@ In many lattice calculations the pion mass is higher than the physical one for p
 
 In this context, I have studied several physical systems with and without resonances:-->
 
-<!-- %%%%%%%%%%%%%%%%%%%%%% -->
-<div class="w3-center">
+<!-- PAPERS -->
+<div class="w3-left">
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1748151>
   <i>``A cross-channel study of pion scattering from lattice QCD''
   </i>
   </a>(2019)
 
   <br>
-    <a target="_blank" class="blau" href=http://inspirehep.net/record/1736721>
-    <i>``Pion scattering in the isospin I=2 channel from elongated lattices''
-    </i>
-    </a>(2019)
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1736721>
+  <i>``Pion scattering in the isospin I=2 channel from elongated lattices''
+  </i>
+  </a>(2019)
 
-    <br>
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1659102>
   <i>``Extraction of isoscalar &pi;&pi; phase-shifts from lattice QCD''
   </i>
@@ -324,6 +416,7 @@ In this context, I have studied several physical systems with and without resona
   <!--D. Guo, A. Alexandru, R. Molina, M. Mai, M. Doring-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1613522>
   <i>``Chiral symmetry constraints on resonant amplitudes''
   </i>
@@ -331,6 +424,7 @@ In this context, I have studied several physical systems with and without resona
   <!--P. C. Bruns and M. Mai-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1593771>
   <i>``Chiral Extrapolations of the &rho;(770) Meson in N<sub>f</sub>=2+1 Lattice QCD Simulations''
   </i>
@@ -338,6 +432,7 @@ In this context, I have studied several physical systems with and without resona
   <!--B. Hu, R. Molina, M. Doring, M. Mai, A. Alexandru-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1495259>
   <i>``Chiral Extrapolation of the Sigma Resonance''
   </i>
@@ -345,15 +440,24 @@ In this context, I have studied several physical systems with and without resona
   <!--M. Doring, B. Hu and M. Mai-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1219963>
   <i>``Finite volume effects and quark mass dependence of the N(1535) and N(1650)''
   </i>
   </a>(2013)
   <!--M. Doring, M. Mai and U.-G. Mei&szlig;ner-->
 </div>
-<!-- %%%%%%%%%%%%%%%%%%%%%% -->
+<!-- PAPERS -->
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
 Selected talks for more details on topics described above and further references:
@@ -393,9 +497,9 @@ Selected talks for more details on topics described above and further references
 
 
 
-<hr><!-- %%%%%%%%%%% Resonances %%%%%%%%%%%%%% -->
-
-<h6>-- Resonances --</h6>
+<hr>
+<!--      Resonances      -->
+<h3>Resonances</h3>
 
 Excited hadrons manifest themselves  in various ways observable in, e.g., scattering or photoproduction experiments as an excess in cross-section rate. However, this depends on various factors and on the type of experiment. Universal properties of such states -- <b>resonances</b> can be extracted from the scattering amplitude extrapolated to complex energies. In a nutshell, given an analytic form of the scattering amplitude fixed by the experimental data at real energies, one extrapolates it to the complex energy plane. The latter so-called Riemann surface is in general a non-trivial manifold consisting  of multiple (2^N, for N thresholds) Riemann sheets, each spanning over the whole complex energy plane. The first Riemann sheet is a pole-free surface, while the others can have poles. These poles are associated with the resonances, which mass and width are exactly fixed by the complex-energy pole position. These both characteristics  of an excited state are independent of the exact production setup.
 
@@ -419,13 +523,21 @@ Excited hadrons manifest themselves  in various ways observable in, e.g., scatte
 </figure>
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
-Of large interest is the so-called <b>Lambda 1405</b> resonance with quantum numbers I=0, S=-1. It is important not only for testing of our understanding of low-energy QCD, but also in explaining novel states of matter searched for in J-PARC, GSI and DAFNE experimental facilities. It may, furthermore, be one of crucial vehicles for explanation of the stiffness of the equation of state of neutron stars, thus, being of interest for applications in Astrophysics.
+Of large interest is the so-called <b>Lambda 1405</b> resonance
+with quantum numbers I=0, S=-1. It is important not only for testing
+of our understanding of low-energy QCD, but also in explaining
+novel states of matter searched for in J-PARC, GSI and DAFNE
+experimental facilities. It may, furthermore, be one of crucial
+vehicles for explanation of the stiffness of the equation of state
+of neutron stars, thus, being of interest for applications in Astrophysics.
 
 <br><br>
-Here is the list of my contributions on this and other baryon resonances, which includes developments of novel theoretical tools
+Here is the list of my contributions on this and other baryon
+resonances, which includes developments of novel theoretical tools
 
+<br>
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
-<div class="w3-center">
+<div class="w3-left">
   <br>
   <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1426708>
@@ -449,15 +561,22 @@ Here is the list of my contributions on this and other baryon resonances, which 
   </i>
   </a>(2011)
   <!--P. C. Bruns, M. Mai and U.-G. Mei&szlig;ner-->
-  <br>  <br>
+  <br>
 </div>
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
 
-and applications thereof to experimental scattering and photoproduction data:
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+and applications thereof to experimental scattering
+and photoproduction data:
 
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
-<div class="w3-center">
+<div class="w3-left">
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1672921>
   <i>``S- and p-wave structure of S=-1 meson-baryon scattering in the resonance region''
   </i>
@@ -465,6 +584,7 @@ and applications thereof to experimental scattering and photoproduction data:
   <!--D. Sadasivan, M. Mai, M. Doring-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1610307>
   <i>``Strange Hadron Spectroscopy with a Secondary KL Beam at GlueX''
   </i>
@@ -472,6 +592,7 @@ and applications thereof to experimental scattering and photoproduction data:
   <!--S. Adhikari et al.-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1351447>
   <i>``Predictions for the &Lambda;<sub>b</sub> &rarr; J/&psi;&Lambda;(1405) decay''
   </i>
@@ -479,6 +600,7 @@ and applications thereof to experimental scattering and photoproduction data:
   <!--L. Roca, M. Mai, E. Oset and U.-G. Mei&szlig;ner-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1415597>
   <i>``Weak decays of heavy hadrons into dynamically generated resonances''
   </i>
@@ -486,6 +608,7 @@ and applications thereof to experimental scattering and photoproduction data:
   <!--E. Oset et al.-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1331405>
   <i>``Constraints on the chiral unitary KbarN amplitude from &pi;&Sigma;K<sup>+</sup> photoproduction data''
   </i>
@@ -493,14 +616,15 @@ and applications thereof to experimental scattering and photoproduction data:
   <!--M. Mai and U.-G. Mei&szlig;ner-->
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1088619>
   <i>``New insights into antikaon-nucleon scattering and the structure of the Lambda(1405)''
   </i>
   </a>(2013)
   <!--M. Mai and U.-G. Mei&szlig;ner-->
 
-
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/924843>
   <i>``&eta;-Photoproduction in a gauge-invariant chiral unitary framework''
   </i>
@@ -510,21 +634,30 @@ and applications thereof to experimental scattering and photoproduction data:
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
 
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br>
 <br>
 Many of these methods are rooted in S-matrix theory and previously derived
 scattering amplitudes from effective field theories and chiral perturbation theory
-<!-- %%%%%%%%%%%%%%%%%%%%%% -->
-<div class="w3-center">
+
+
+<br>
+<!-- Papers -->
+<div class="w3-left">
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1328672>
   <i>``Recoil corrections in antikaon-deuteron scattering''
   </i>
   </a>(2014)
   <!--M. Mai, V. Baru, E. Epelbaum and A. Rusetsky-->
 
-
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/820717>
   <i>``Aspects of meson-baryon scattering in three and two-flavor chiral perturbation theory''
   </i>
@@ -534,8 +667,12 @@ scattering amplitudes from effective field theories and chiral perturbation theo
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
 
 <br>
+<br>
+<br>
+<br>
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
-Selected talks for more details on topics described above and further references:
+Selected talks for more details on topics described above
+and further references:
 
   <a target="_blank" class="blau" href="/content/MM-ptalk-NSTAR2017.pdf">
   <strong>
@@ -571,9 +708,15 @@ Selected talks for more details on topics described above and further references
 <br>
 
 
-<hr><!-- %%%%%%%%%%% CP violation %%%%%%%%%%%%%% -->
 
-<h6>-- CP violation --</h6>
+
+
+
+
+<hr>
+<!-- %%%%%%%%%%% CP violation %%%%%%%%%%%%%% -->
+
+<h3>CP violation</h3>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <figure style="
@@ -596,13 +739,15 @@ Selected talks for more details on topics described above and further references
 
 [...under construction]
 
-<div class="w3-center">
+<div class="w3-left">
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1730019>
   <i>``Kaon Photoproduction and the &Lambda; Decay Parameter &alpha;-''
   </i></a>(2019)
 
   <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1385763>
   <i>``&theta;-dependence of the lightest meson resonances in QCD''
   </i></a>(2013)
@@ -610,8 +755,12 @@ Selected talks for more details on topics described above and further references
 
 
 <br>
+<br>
+<br>
+<br>
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
-Selected talks for more details on topics described above and further references:
+Selected talks for more details on topics described
+above and further references:
 
   <a target="_blank" class="blau" href="/content/MM-alpha-MENU.pdf">
   <strong>
@@ -626,13 +775,14 @@ Selected talks for more details on topics described above and further references
 
 
 
-<hr><!-- %%%%%%%%%%% Machine learning %%%%%%%%%%%%%% -->
-
-<h6>-- Model selection --</h6>
+<hr>
+<!--   Machine learning   -->
+<h3>Model selection</h3>
 
 [...under construction]
 
-<div class="w3-center">
+<div class="w3-left">
+  <i class="fa fa-file-text" style="width:30px"> </i>
   <a target="_blank" class="blau" href=http://inspirehep.net/record/1696458>
   <i>``Towards the Minimal Spectrum of Excited Baryons''
   </i></a>(2019)
@@ -645,10 +795,12 @@ Selected talks for more details on topics described above and further references
 
 <!-- BEGIN: Teaching -->
 <br><br><br><br>
-<div class="w3-container w3-content w3-padding-10" style="max-width:700px; background-color: white;margin:2px; font-size:15px" id="teaching">
+<div class="w3-container w3-content w3-padding-10"
+style="max-width:700px; background-color: white;margin:2px;
+font-size:15px" id="teaching">
 
 
-<h3>Teaching/Outreach</h3>
+<h1>Teaching/Outreach</h1>
 
 
 <hr><!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
@@ -693,25 +845,23 @@ Selected talks for more details on topics described above and further references
 <a target="_blank" class="blau" href="content/Mind-Atlas.pdf">
 <i><b>Collection of mind-maps</i></b></a> (thanks to all participants)
 
-
-<br><br><!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<hr><!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 Art-science fusion event at
 <a target="_blank" href="http://www.rhizomedc.org/new-events/2017/11/2/entropy"><b>RHIZOME DC</b></a> --> <a target="_blank" class="blau" href="content/MM-Entropy-Riozome.pdf">
 <i><b>Talk on entropy</i></b></a>
 
+<hr><!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<b>Nuclear Seminar Schedule GWU:</b>
+<a target="_blank" class="blau" href="https://physics.columbian.gwu.edu/nuclear-physics-seminars">
+<i>GWU NUCLEAR</a>
 
-<br><br><!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<b>Nuclear Journal Club</b> -
+<hr><!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<b>Nuclear Journal Club:</b>
 <a target="_blank" class="blau" href="https://nuclear.voxcharta.org/">
 <i>GW voxcharta page</a>
 
-
-<br><br><!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<b>Nuclear Seminar Schedule GWU:</b> -
-<b> to be updated...</b>
-
-<br><br><!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<b>"Physikshow" of University Bonn</b> -
+<hr><!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<b>"Physikshow" of University Bonn:</b>
 <a target="_blank" class="blau" href="https://www.physikshow.uni-bonn.de//">
 <i>Homepage</a>
 
@@ -734,9 +884,10 @@ Art-science fusion event at
 
 
 <!--BEGIN: Footer -->
-<footer class="w3-container w3-padding-1 w3-center w3-xlarge" style="margin:2px;">
+<footer class="w3-container w3-padding-1 w3-center w3-xlarge"
+style="margin:2px;">
   <hr>
-  <p class="w3-medium">Ⓒ2019 by Maxim Mai
+  <p class="w3-medium">Ⓒ2020 by Maxim Mai
   created with
   <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">
   w3.css</a> and hosted by
