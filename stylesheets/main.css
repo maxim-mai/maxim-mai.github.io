@@ -11,13 +11,13 @@
 
 .img-comp-container {
   position: relative;
-  height: 240px; /*should be the same height as the images*/
+  height: 280px; /*should be the same height as the images*/
 }
 
 .img-comp-img {
   position: absolute;
   width: auto;
-  height: 240px;
+  height: 280px;
   overflow: hidden;
 }
 
@@ -39,12 +39,12 @@
 }
 
 .chart-img {
-  width: 330px;
+  width: 500px;
 }
 
 @media (min-width:601px){
   .chart-img {
-    width: 400px;
+    width: 500px;
   }
 }
 
@@ -71,17 +71,23 @@
   bottom: auto;}
 /* %%%%%%%%%%%%%%%%%%%%%% end header %%%%%%%%%%%%%%%%%%%%%% */
 
+a.blau, a.blau:visited {
+      color: blue;
+      background-color: transparent;
+      text-decoration: none;
+ }
+
 
 a.blau:link {
     color: blue;
     background-color: transparent;
     text-decoration: none;
 }
-a.blau:visited {
+/* a.blau:visited {
     color: blue;
     background-color: transparent;
     text-decoration: none;
-}
+} */
 
 /* Bottom right text */
 .text-block {

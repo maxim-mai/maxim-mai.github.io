@@ -22,6 +22,8 @@
 <style>
   body {font-family: "Lato", sans-serif; background-color: white;}
 </style>
+
+
 <script>
 function initComparisons() {
   var x, i;
@@ -75,7 +77,7 @@ function initComparisons() {
       /*get the cursor's x position:*/
       pos = getCursorPos(e)
       /*prevent the slider from being positioned outside the image:*/
-      if (pos < 0) pos = 0;
+      if (pos < 75) pos = 75;
       if (pos > w) pos = w;
       /*execute a function that will resize the overlay image according to the cursor:*/
       slide(pos);
@@ -237,7 +239,8 @@ of the QCD Hamiltonian -- see figure below.
     <figure style="
       float: center;
       max-width: 800px;
-      width: 90%;
+      margin-left: 75px;
+      width: 99%;
       text-align: center;
       font-style: italic;
       font-size: smaller;
@@ -248,10 +251,12 @@ of the QCD Hamiltonian -- see figure below.
 
       <div class="img-comp-container">
         <div class="img-comp-img">
-        <img src="content/INFVOL.jpg" class="chart-img">
+        <img      style="margin-left: 75px;",
+                  src="content/INFVOL.jpg" class="chart-img">
         </div>
-        <div class="img-comp-img img-comp-overlay">
-        <img src="content/FINVOL.jpg" class="chart-img">
+        <div      class="img-comp-img img-comp-overlay">
+        <img      style="margin-left: 75px;",
+                  src="content/FINVOL.jpg" class="chart-img">
         </div>
       </div>
 
@@ -261,7 +266,7 @@ of the QCD Hamiltonian -- see figure below.
       </script>
 
       <figcaption>
-        Two-pion scattering amplitude <b>T</b> in finite and infinite volume. <u>In finite volume:</u> It is a real-valued and singular function of interaction energy. Position of the poles corresponds to the energy eigenvalues to be measured in a corresponding lattice setup. <u>In infinte volume:</u> It is an analytic complex valued
+        Two scalar particle scattering amplitude <b>T</b> in finite and infinite volume. <u>In finite volume:</u> It is a real-valued and singular function of interaction energy. Position of the poles corresponds to the energy eigenvalues to be measured in a corresponding lattice setup. <u>In infinte volume:</u> It is an analytic complex valued
         function of energy. Its squared value is proportional to experimentally accessible quantities. Extrapolating to complex
         energies universal properties of resonances can be extracted. --
         <b>Pull the blue bar to switch between both "worlds". X-axis
