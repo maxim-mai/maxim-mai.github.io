@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="stylesheets/main.css" type="text/css"/>
 <style>
-  body {font-family: "Lato", sans-serif; background-color: white;}
+  body {font-family: "Lato", sans-serif; background-color: #fff2cc;}
 </style>
 
 
@@ -130,7 +130,7 @@ function initComparisons() {
 <br>
 <br>
  <div class="container">
-  <img src="content/Maxim-5.jpg" alt="Notebook" style="width:100%;">
+  <img src="content/Maxim-5.jpg" alt="Notebook" style="max-width:100%;">
     <div class="content">
     <p>
     <b>Hello and welcome to my homepage!</b>
@@ -141,6 +141,7 @@ function initComparisons() {
     Previously, I was a postdoctoral researcher at the <a href="https://www.hiskp.uni-bonn.de/">HISKP at
     the University Bonn</a>. Below you can find more about my research and teaching materials or you can contact me:
     <br>
+    <br>
     <i class="fa fa-envelope"   style="width:30px"> </i>maximmai@gwu.edu<br>
     <i class="fa fa-phone"      style="width:30px"> </i>+1 202 9949265<br>
     <i class="fa fa-map-marker" style="width:30px"> </i>Corcoran Hall, 725 21st NW, Washington, DC
@@ -148,8 +149,6 @@ function initComparisons() {
     </p>
     </div>
 </div>
-
-<hr><!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 
 
@@ -164,21 +163,26 @@ function initComparisons() {
 <br>
 <h1>Research</h1>
 
+<hr class="thinline"/>
+
 <p>
 Strong interaction is one of the four <a target="_blank" class="blau"
 href="https://en.wikipedia.org/wiki/Fundamental_interaction">
-<b>fundamental forces of nature</b></a>. Strongly interacting particles are called <b>hadrons</b> such as protons, neutrons, pions, etc.. Similarly to the excitations of atoms (see visible spectrum of hydrogen below) hadrons do not exist only in the ground state but can be excited in scattering or production experiments.
+<b>fundamental forces of nature</b></a>. Strongly interacting particles are called <b>hadrons</b> such as
+protons, neutrons, pions, etc.. Similarly to the excitations of atoms (see visible spectrum of hydrogen below)
+hadrons do not exist only in the ground state but can be excited in scattering or production experiments.
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <figure style="
   float: center;
   max-width: 800px;
-  width: 95%;
+  width: 100%;
   text-align: center;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
+  background-color: white;
   border: thin silver solid;
-  margin: 1em;
+  margin: 0em;
   padding: 0.5em;">
 
   <img src="content/Hydrogen_spectrum_visible.png" width="95%">
@@ -188,24 +192,33 @@ href="https://en.wikipedia.org/wiki/Fundamental_interaction">
 </figure>
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
-The excited hadrons decay very quickly into enrgetically lower states. But the pattern of their existence and appearance is universal and probably our best clue in understanding of the strong interaction and the origin of matter. The summary of humanitiy's current state of knowledge is collected by the <a target="_blank" class="blau" href="http://pdglive.lbl.gov/Viewer.action"><b>Particle Data Group</b></a>.
+The excited hadrons decay very quickly into enrgetically lower states. But the pattern of their
+existence and appearance is universal and probably our best clue in understanding of the
+strong interaction and the origin of matter. The summary of humanitiy's current state of
+knowledge is collected by the <a target="_blank" class="blau" href="http://pdglive.lbl.gov/Viewer.action"><b>Particle Data Group</b></a>.
 
 
-Quantum effects but also relativity are crucial for the understanding of hadrons. The way to reconcile both is the so-called Quantum Field Theory, which for the strong interaction is called <a target="_blank" class="blau"
+Quantum effects but also relativity are crucial for the understanding of hadrons.
+The way to reconcile both is the so-called Quantum Field Theory, which for the strong
+interaction is called <a target="_blank" class="blau"
 href="https://en.wikipedia.org/wiki/Quantum_chromodynamics">
 <b>Quantum Chromodynamics (<b>QCD</b>)</b></a>.
 
 <br><br>
-This theory has several unusual properties rooted in its non-trivial mathematical structure. For example, protons are build up of 3 quarks, but have a mass hundred times larger than the sum of quark masses. Thus, the largest part of our mass and that of all visible Universe -- is due to QCD.
-Unraveling the pattern of excited hadrons is the golden thread through my research, connecting methods from S-matrix theory, effective field theories, numerical techniques of Lattice QCD, statistics, etc.. The links below will lead you to my publications available as open source articles on
+This theory has several unusual properties rooted in its non-trivial mathematical structure.
+For example, protons are build up of 3 quarks, but have a mass hundred times larger than the sum of quark masses.
+Thus, the largest part of our mass and that of all visible Universe -- is due to QCD.
+Unraveling the pattern of excited hadrons is the golden thread through my research, connecting methods
+from S-matrix theory, effective field theories, numerical techniques of Lattice QCD, statistics, etc..
+The links below will lead you to my publications available as open source articles on
 <a target="_blank" class="blau" href="https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=%22maxim+mai%22&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first"><b>arXiv</b></a>.
 Some selected talks on corresponding topics give a broader picture on each topic.
 </p>
+<hr class="thinline"/>
 
 
-
-<hr><!-- %%%%%%%%%%% Lattice %%%%%%%%%%%%%% -->
-
+<!-- %%%%%%%%%%% Lattice %%%%%%%%%%%%%% -->
+<br>
 <h3>Lattice QCD</h3>
 
 <p>
@@ -216,8 +229,9 @@ can be studies in scenarios which may even be inaccessible
 by the experiments. Thus, Lattice QCD is more than a complementing
 tool to experiments but truly a theoretical approach to QCD.
 
-<h5>Quantization</h5>
 
+<br><br>
+<h5>Quantization</h5>
 <p>
 Lattice computations are necessarily performed on discretized
 Eucledean space time in a finite box. Both these technical
@@ -243,23 +257,24 @@ of the QCD Hamiltonian -- see figure below.
     <figure style="
       float: center;
       max-width: 800px;
-      margin-left: 75px;
-      width: 99%;
+      margin-left: 85px;
+      width: 100%;
       text-align: center;
       font-style: italic;
       font-size: smaller;
       text-indent: 0;
+      background-color: white;
       border: thin silver solid;
-      margin: 1em;
-      padding: 0.5em;">
+      margin: 0em;
+      padding: 1em;">
 
       <div class="img-comp-container">
         <div class="img-comp-img">
-        <img      style="margin-left: 75px;",
+        <img      style="margin-left: 85px;",
                   src="content/INFVOL.jpg" class="chart-img">
         </div>
         <div      class="img-comp-img img-comp-overlay">
-        <img      style="margin-left: 75px;",
+        <img      style="margin-left: 85px;",
                   src="content/FINVOL.jpg" class="chart-img">
         </div>
       </div>
@@ -293,9 +308,9 @@ of the QCD Hamiltonian -- see figure below.
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     <figure style="
       float: right;
-      max-width: 200px;
+      max-width: 250px;
       width: 90%;
-      margin: 0.5em;
+      margin: 1em;
       padding: em;">
 
       <a target="_blank" class="blau"
@@ -321,9 +336,25 @@ of the QCD Hamiltonian -- see figure below.
     calculated on the lattice:
 
 
+
     <!-- PAPERS -->
     <div class="w3-left">
 
+      <i class="fa fa-file-text" style="width:30px"> </i>
+      <a target="_blank" class="blau" href=https://inspirehep.net/literature/1849284>
+      <i>``Multi-particle systems on the lattice and chiral extrapolations: a brief review''
+      </i>
+      </a>(2021)
+      <br>
+      <br>
+
+      <i class="fa fa-file-text" style="width:30px"> </i>
+      <a target="_blank" class="blau" href=https://inspirehep.net/literature/1841349>
+      <i>``Three-body interactions from the finite-volume QCD spectrum''
+      </i>
+      </a> (2021)
+
+      <br>
       <i class="fa fa-file-text" style="width:30px"> </i>
       <a target="_blank" class="blau" href=https://inspirehep.net/literature/1766164>
       <i>``Three body spectrum from lattice QCD''
@@ -360,14 +391,6 @@ of the QCD Hamiltonian -- see figure below.
       </i>
       </a>(2017)
       <!--M. Mai, M. Doring-->
-
-      <br>
-      <i class="fa fa-file-text" style="width:30px"> </i>
-        <a target="_blank" class="blau" href=http://inspirehep.net/record/1606089>
-          <i>``Three-body Unitarity with Isobars Revisited''</i>
-        </a>(2017)
-      <!--M. Mai, B. Hu, M. Doring, A. Pilloni, A. Szczepaniak-->
-      <br>
     </div>
     <!-- PAPERS -->
 
@@ -378,7 +401,10 @@ of the QCD Hamiltonian -- see figure below.
   <div class="w3-container"style="max-width:100%;font-size:14px;text-align: justify;">
 
     <br>
-    Above methods aim on mapping configurations manifested in finite and infinite volume directly. Another methods may exist in extracting bulk properties of infinite volume quantities from a set of fintei volume configurations. I was very happy in working on development and applications of such alternative techniques for the infinite volume mapping:
+    Above methods aim on mapping configurations manifested in finite and infinite volume directly.
+    Another methods may exist in extracting bulk properties of infinite volume quantities from a
+    set of finite volume configurations. I was very happy in working on development and applications of
+    such alternative techniques for the infinite volume mapping:
     <br>
 
     <!-- %%%%%%%%%%%%%%%%%%%%%% -->
@@ -403,22 +429,27 @@ of the QCD Hamiltonian -- see figure below.
     <br>
     <h5>Unphysical pion mass (a chance and a challenge)</h5>
 
-    In many lattice calculations the pion mass is higher than the physical one for techniqual reasons. This technicality needs to be overcome (in addition to infinite volume mapping and continuum extrapolations) when comparing lattice results to the physical ones. On the other side, it also is a chance to explore the structure of QCD promoting a pion mass to a continious parameter, and exploring our understanding in this orthogonal to the energy dimension.
+    In many lattice calculations the pion mass is higher than the physical one for techniqual reasons.
+    This technicality needs to be overcome (in addition to infinite volume mapping and continuum extrapolations)
+    when comparing lattice results to the physical ones. On the other side, it also is a chance to explore the
+    structure of QCD promoting a pion mass to a continious parameter, and exploring our understanding in this
+    orthogonal to the energy dimension.
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <figure style="
   float: center;
   max-width: 800px;
-  width: 95%;
+  width: 100%;
   text-align: center;
   font-style: italic;
   font-size: smaller;
+  background-color: white;
   text-indent: 0;
   border: thin silver solid;
-  margin: 1em;
+  margin: 0em;
   padding: 0.5em;">
 
-  <img src="content/pipi.jpg" width="95%">
+  <img src="content/Chiral-rainbow-3d.png" width="75%">
   <figcaption>Two-pion scattering amplitude at twice the physical pion mass from Lattice QCD (colored points with error bars) vs. phenomenological model (red line) based on Chiral Perturbation Theory. [<a target="_blank" class="blau" href=http://inspirehep.net/record/1748151>REF</a>]</figcaption>
 </figure>
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
@@ -551,7 +582,8 @@ of the QCD Hamiltonian -- see figure below.
 
 
 
-<hr>
+<hr class="thinline"/>
+<br>
 <!--      Resonances      -->
 <h3>Resonances</h3>
 
@@ -563,35 +595,58 @@ In a nutshell, given an analytic form of the scattering amplitude fixed by the e
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <figure style="
   float: center;
-  max-width: 600px;
-  width: 95%;
+  max-width: 800px;
+  width: 100%;
   text-align: center;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
+  background-color: white;
   border: thin silver solid;
   margin: 1em;
-  padding: 0.5em;">
+  padding: 0.1em;">
 
-  <img src="content/Lambda1405.jpg" width="90%">
+  <img src="content/3D-plot.png" width="100%">
   <figcaption>
-  Resonance poles on the second Riemann sheet in the complex energy-plane (E). Red line shows the only part of the amplitude T constrained by the experimental data. [<a target="_blank" class="blau" href=http://inspirehep.net/record/1331405>REF</a>]</figcaption>
+  Resonance poles on the second Riemann sheet in the complex energy-plane (E). Red line shows the only
+  part of the amplitude T constrained by the experimental data (right bottom panel).
+  [<a target="_blank" class="blau" href=https://inspirehep.net/literature/1820593>REF</a>]</figcaption>
 </figure>
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
-<h5>Two and three-body dynamics</h5>
-
-I am working on extraction of universal parameters of resonances using experimental scattering, photoproduction, electroproduction or lattice QCD results. Some of those states are N<sup>*</sup>(1535), N<sup>*</sup>(1650) (lowest S-wave excitations of nucleon), &rho;(770), &sigma;(500) (lightest unstable hadrons), a<sub>1</sub>(1260) (axial meson resonance decaying in &pi;&pi;&pi;), &Lambda;(1405) and &Sigma;(1385). In that, I have developed with my collaborators many novel tools to access two and three body dynamics of hadrons:
-
-
-<!-- Of large interest is the so-called <b>Lambda 1405</b> resonance
+Of large interest is the so-called <b>Lambda 1405</b> resonance
 with quantum numbers I=0, S=-1. It is important not only for testing
 of our understanding of low-energy QCD, but also in explaining
 novel states of matter searched for in J-PARC, GSI and DAFNE
-experimental facilities. It may, furthermore, be one of crucial
-vehicles for explanation of the stiffness of the equation of state
-of neutron stars, thus, being of interest for applications in Astrophysics.
--->
+experimental facilities. It may, furthermore, be one of vehicles for
+explanation of the stiffness of the equation of state of neutron stars,
+thus, being of interest for applications in Astrophysics. For more details
+see my recent review:
+
+<br>
+<br>
+<i class="fa fa-file-text" style="width:30px"> </i>
+<a target="_blank" class="blau" href=https://inspirehep.net/literature/1820593>
+<i>``Review of the &Lambda;(1405): A curious case of a strange-ness resonance''
+</i>
+</a>(2020)
+<br>
+<br>
+
+
+
+
+
+<h5>Two and three-body dynamics</h5>
+
+I am working on extraction of universal parameters of resonances using experimental scattering, photoproduction,
+electroproduction or lattice QCD results. Some of those states are N<sup>*</sup>(1535), N<sup>*</sup>(1650)
+(lowest S-wave excitations of nucleon), &rho;(770), &sigma;(500) (lightest unstable hadrons), a<sub>1</sub>(1260)
+(axial meson resonance decaying in &pi;&pi;&pi;), &Lambda;(1405) and &Sigma;(1385). In that, I have developed with my
+collaborators many novel tools to access two and three body dynamics of hadrons:
+
+
+
 
 <br>
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
@@ -703,12 +758,14 @@ of neutron stars, thus, being of interest for applications in Astrophysics.
 </div>
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
 
-
 <br><br>
 <br><br>
 <br><br>
 <br><br>
 <br>
+
+
+
 Many of these methods are rooted in S-matrix theory and previously derived
 scattering amplitudes from effective field theories and chiral perturbation theory
 
@@ -775,14 +832,11 @@ and further references:
   (Seminar at U. Bonn).
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
 <br>
+<hr class="thinline"/>
+<br>
 
 
-
-
-
-<hr>
 <!-- %%%%%%%%%%% CP violation %%%%%%%%%%%%%% -->
-
 <h3>CP violation</h3>
 
 [...under construction]
@@ -796,6 +850,7 @@ and further references:
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
+  background-color: white;
   border: thin silver solid;
   margin: 1em;
   padding: 0.5em;">
@@ -837,13 +892,10 @@ above and further references:
   </a>  (Talk at MENU 2019);
 <!-- %%%%%%%%%%%%%%%%%%%%%% -->
 <br>
+<hr class="thinline"/>
+<br>
 
 
-
-
-
-
-<hr>
 <!--   Machine learning   -->
 <h3>Model selection</h3>
 
@@ -855,16 +907,21 @@ above and further references:
   <i>``Towards the Minimal Spectrum of Excited Baryons''
   </i></a>(2019)
 </div>
+<br>
+<hr class="thinline"/>
+<br>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<br><br><br><br><br>
 
 
 
 
-
-
-<!-- BEGIN: Teaching -->
-<br><br><br><br>
+<!-- TEACHING -->
+<br>
 <div class="w3-container w3-content w3-padding-10"
-style="max-width:700px; background-color: white;margin:2px;
+style="max-width:700px;margin:2px;
 font-size:15px" id="teaching">
 
 

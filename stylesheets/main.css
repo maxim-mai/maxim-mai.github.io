@@ -157,3 +157,19 @@ a.blau:link {
   font-size: 14px;
   display: block;
 }
+
+.gradientline {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 15px;
+        border: 0;
+        box-shadow: inset 0 12px 12px -12px rgba(9, 84, 132);
+    }
+
+.thinline {
+  background-color: gray;
+  color: black;
+  height: 1px;
+  width: 100%;
+}
