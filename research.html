@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+<title>Maxim Mai</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/main.css" type="text/css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px" background="pics/bg2.png">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="pics/profil-2-avatar.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Maxim Mai</b></h4>
+    <p class="w3-text-grey">research</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html#research" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-arrow-left fa-fw w3-margin-right"></i>BACK</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<script>
+function initComparisons() {
+  var x, i;
+  /*find all elements with an "overlay" class:*/
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /*once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function:*/
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /*get the width and height of the img element*/
+    w = img.offsetWidth-20;
+    h = img.offsetHeight;
+    /*set the width of the img element to 50%:*/
+    img.style.width = (w / 2) + "px";
+    /*create slider:*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /*insert slider*/
+    img.parentElement.insertBefore(slider, img);
+    /*position the slider in the middle:*/
+    slider.style.top = (h / 4) - (slider.offsetHeight / 4) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /*execute a function when the mouse button is pressed:*/
+    slider.addEventListener("mousedown", slideReady);
+    /*and another function when the mouse button is released:*/
+    window.addEventListener("mouseup", slideFinish);
+    /*or touched (for touch screens:*/
+    slider.addEventListener("touchstart", slideReady);
+    /*and released (for touch screens:*/
+    window.addEventListener("touchstop", slideFinish);
+    function slideReady(e) {
+      /*prevent any other actions that may occur when moving over the image:*/
+      e.preventDefault();
+      /*the slider is now clicked and ready to move:*/
+      clicked = 1;
+      /*execute a function when the slider is moved:*/
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /*the slider is no longer clicked:*/
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /*if the slider is no longer clicked, exit this function:*/
+      if (clicked == 0) return false;
+      /*get the cursor's x position:*/
+      pos = getCursorPos(e)
+      /*prevent the slider from being positioned outside the image:*/
+      if (pos < 75) pos = 75;
+      if (pos > w) pos = w;
+      /*execute a function that will resize the overlay image according to the cursor:*/
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = e || window.event;
+      /*get the x positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x coordinate, relative to the image:*/
+      x = e.pageX - a.left;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /*resize the image:*/
+      img.style.width = x + "px";
+      /*position the slider:*/
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+</script>
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+
+
+<!--********************************************************************-->
+<!--************************** !PAGE CONTENT! **************************-->
+<!--********************************************************************-->
+<div class="w3-main" style="margin-left:300px; margin-right:100px; max-width:800px;text-align: justify">
+
+
+
+
+
+
+
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <!--%%%%%%%%% Header %%%%%%%%%%%-->
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <header>
+    <a href="#"><img src="pics/profil-2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <!-- <div class="w3-container">
+    <h1><b>Maxim Mai</b></h1><br>
+    </div> -->
+  </header>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+
+
+
+
+
+
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <div class="w3-container" style="margin-bottom:32px">
+  <h1><b>Research</b></h1>
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+  Strong interaction is one of the four <a target="_blank" class="blau"
+  href="https://en.wikipedia.org/wiki/Fundamental_interaction">
+  <b>fundamental forces of nature</b></a>. Strongly interacting particles are called <b>hadrons</b> such as
+  protons, neutrons, pions, etc.. Similarly to the excitations of atoms (see visible spectrum of hydrogen below)
+  hadrons do not exist only in the ground state but can be excited in scattering or production experiments.
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <figure style="
+    float: center;
+    max-width: 800px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    background-color: white;
+    border: thin silver solid;
+    margin: 0em;
+    padding: 0.5em;">
+
+    <img src="pics/Hydrogen_spectrum_visible.png" width="95%">
+    <figcaption>Visible spectrum of Hydrogen [<a target="_blank"
+    class="blau"
+    href=https://en.wikipedia.org/wiki/Hydrogen>Wikipedia</a>]</figcaption>
+  </figure>
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+  The excited hadrons decay very quickly into enrgetically lower states. But the pattern of their
+  existence and appearance is universal and probably our best clue in understanding of the
+  strong interaction and the origin of matter. The summary of humanitiy's current state of
+  knowledge is collected by the <a target="_blank" class="blau" href="http://pdglive.lbl.gov/Viewer.action"><b>Particle Data Group</b></a>.
+
+
+  Quantum effects but also relativity are crucial for the understanding of hadrons.
+  The way to reconcile both is the so-called Quantum Field Theory, which for the strong
+  interaction is called <a target="_blank" class="blau"
+  href="https://en.wikipedia.org/wiki/Quantum_chromodynamics">
+  <b>Quantum Chromodynamics (<b>QCD</b>)</b></a>.
+
+  <br><br>
+  This theory has several unusual properties rooted in its non-trivial mathematical structure.
+  For example, protons are build up of three quarks, but have a mass hundred times larger than the sum of quark masses. Thus, the largest part of our mass and that of all visible Universe -- is due to QCD.
+  Unraveling the pattern of excited hadrons is the golden thread through my research, connecting methods
+  from S-matrix theory, effective field theories, numerical techniques of Lattice QCD, statistics, etc..
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <div class="w3-container" style="margin-bottom:32px" id="resonances">
+  <h2><b>Resonances</b></h2>
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+  Excited hadrons manifest themselves in various ways observable in, e.g., scattering or photoproduction experiments as an excess in cross-section rate. However, this depends on various factors and on the type of experiment. <b>Universal properties of resonances</b> (excited hadrons) can be extracted from the scattering amplitude extrapolated to complex energies.
+
+  In a nutshell, given an analytic form of the scattering amplitude fixed by the experimental data at real energies, one extrapolates it to the complex energy plane. The latter so-called Riemann surface is in general a non-trivial manifold consisting  of multiple (2<sup>N</sup>, for N production thresholds) Riemann sheets, each spanning over the whole complex energy plane. The first Riemann sheet is a pole-free surface, while the others can have poles. These poles are associated with the resonances (see Figure below), whose mass and width are exactly fixed by the complex-energy pole position. These both characteristics of an excited state are independent of the exact production setup.
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <figure style="
+    float: center;
+    max-width: 800px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    background-color: white;
+    border: thin silver solid;
+    margin: 0em;
+    padding: 0.5em;">
+
+    <img src="pics/3D-plot.png" width="70%">
+    <figcaption>
+    Resonance poles on the second Riemann sheet in the complex energy-plane (E). Red line shows the
+    part of the amplitude T, which is constrained by the experimental data.
+    [<a target="_blank" class="blau" href=https://inspirehep.net/literature/1820593>REF</a>]
+    </figcaption>
+  </figure>
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+  One interesting state is the <b>Lambda 1405</b> resonance
+  with quantum numbers I=0, S=-1. It is important not only for testing
+  of our understanding of low-energy QCD, but also in explaining
+  novel states of matter searched for in J-PARC, GSI and DAFNE
+  experimental facilities. It may, furthermore, be one of vehicles for
+  explanation of the stiffness of the equation of state of neutron stars,
+  thus, being of interest for applications in Astrophysics. For more details
+  see a dedicated review:
+
+  <br><br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=https://inspirehep.net/literature/1820593>
+  <i>``Review of the &Lambda;(1405): A curious case of a strange-ness resonance''
+  </i>
+  </a>(2020)
+  <br>
+  <br>
+  <br>
+
+
+  I am working on extraction of universal parameters of resonances using experimental scattering, photoproduction, electroproduction or lattice QCD results. Some of those states are N<sup>*</sup>(1535), N<sup>*</sup>(1650) (lowest S-wave excitations of nucleon), &rho;(770), &sigma;(500) (lightest unstable hadrons), a<sub>1</sub>(1260) (axial meson resonance decaying in &pi;&pi;&pi;), &Lambda;(1405) and &Sigma;(1385). In that, I have developed with my collaborators many tools to access two and three-body dynamics of hadrons:
+
+
+  <br><br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1606089>
+  <i>``Three-body Unitarity with Isobars Revisited''</i>
+  </a>(2017)
+  <!--M. Mai, B. Hu, M. Doring, A. Pilloni, A. Szczepaniak-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1426708>
+  <i>``On the pole content of coupled channels chiral approaches used for the KbarN system''
+  </i>
+  </a>(2016)
+  <!--A. Cieply, M. Mai, U.-G. Mei&szlig;ner and J. Smejkal-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1123381>
+  <i>``Pion photoproduction off the proton in a gauge-invariant chiral unitary framework''
+  </i>
+  </a>(2012)
+  <!--M. Mai, P. C. Bruns and U.-G. Mei&szlig;ner-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/880916>
+  <i>``Chiral dynamics of the S11(1535) and S11(1650) resonances revisited''
+  </i>
+  </a>(2011)
+  <!--P. C. Bruns, M. Mai and U.-G. Mei&szlig;ner-->
+  <br><br>
+
+
+  Applications thereof to experimental scattering and photoproduction data:
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=https://inspirehep.net/literature/1782971>
+  <i>``Dalitz plots and lineshape of a<sub>1</sub>(1260) from a relativistic three-body unitary approach''
+  </i>
+  </a>(2020)
+  <!--D. Sadasivan, M. Mai, M. Doring-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1672921>
+  <i>``S- and p-wave structure of S=-1 meson-baryon scattering in the resonance region''
+  </i>
+  </a>(2019)
+  <!--D. Sadasivan, M. Mai, M. Doring-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1610307>
+  <i>``Strange Hadron Spectroscopy with a Secondary KL Beam at GlueX''
+  </i>
+  </a>(2017)
+  <!--S. Adhikari et al.-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1351447>
+  <i>``Predictions for the &Lambda;<sub>b</sub> &rarr; J/&psi;&Lambda;(1405) decay''
+  </i>
+  </a>(2015)
+  <!--L. Roca, M. Mai, E. Oset and U.-G. Mei&szlig;ner-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1415597>
+  <i>``Weak decays of heavy hadrons into dynamically generated resonances''
+  </i>
+  </a>(2015)
+  <!--E. Oset et al.-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1331405>
+  <i>``Constraints on the chiral unitary KbarN amplitude from &pi;&Sigma;K<sup>+</sup> photoproduction data''
+  </i>
+  </a>(2015)
+  <!--M. Mai and U.-G. Mei&szlig;ner-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1088619>
+  <i>``New insights into antikaon-nucleon scattering and the structure of the Lambda(1405)''
+  </i>
+  </a>(2013)
+  <!--M. Mai and U.-G. Mei&szlig;ner-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/924843>
+  <i>``&eta;-Photoproduction in a gauge-invariant chiral unitary framework''
+  </i>
+  </a>(2011)
+  <!--D. Rui\'c, M. Mai and U.-G. Mei&szlig;ner-->
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <div class="w3-container" style="margin-bottom:32px" id="LQCD">
+  <h2>Lattice QCD</h2>
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+  Hadron spectroscopy from QCD is currently only accessible
+  within the Lattice Gauge Theory. There, in large-scale
+  numerical calculations, hadrons and interactions  thereof
+  can be studied in scenarios which may even be inaccessible
+  by the experiments. Thus, Lattice QCD is more than a complementing
+  tool to experiments but truly a theoretical approach to QCD.
+
+
+  <h3>Finite volume effects -- Quantization</h3>
+
+  Lattice computations are necessarily performed on discretized
+  Eucledean space time in a finite box. Both these technical
+  limitations need to be lifted when comparing the results of
+  Lattice QCD with phenomenological observations. The discretization
+  effects are well under control, dealt with continuum extrapolations.
+  Mathematically more intricate and interesting effects arise from
+  the finiteness  of the lattice setup -- the so-called <b>finite
+  volume effects</b>. At the core, the issue is that a finite
+  coordinate space induces the need for boundary conditions, which
+  induces the discretization of the momentum-space and the spectrum
+  of the QCD Hamiltonian -- see figure below.
+
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%  SLIDER %%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <figure style="
+    float: center;
+    max-width: 800px;
+    margin-left: 85px;
+    width: 100%;
+    text-align: justify;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    background-color: white;
+    border: thin silver solid;
+    margin: 0em;
+    padding: 1em;">
+
+    <div class="img-comp-container">
+      <div class="img-comp-img">
+        <img style="margin-left: 75px;" src="pics/INFVOL.jpg" class="chart-img">
+      </div>
+      <div class="img-comp-img img-comp-overlay">
+        <img style="margin-left: 75px;" src="pics/FINVOL.jpg" class="chart-img">
+      </div>
+    </div>
+
+    <script>
+      initComparisons();
+    </script>
+
+    <figcaption>
+    Two scalar particle scattering amplitude <b>T</b> in finite and infinite volume. <u>In finite volume:</u> It is a real-valued and singular function of interaction energy. Position of the poles corresponds to the energy eigenvalues to be measured in a corresponding lattice setup. <u>In infinte volume:</u> It is an analytic complex valued
+    function of energy. Its squared value is proportional to experimentally accessible quantities. Extrapolating to complex
+    energies universal properties of resonances can be extracted. --
+    <b>Pull the blue bar to switch between both "worlds". X-axis
+    denotes the scattering energy in terms of the pion mass.
+    </b>
+    </figcaption>
+    </figure>
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+  <br>
+
+
+
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <figure style="
+    float: right;
+    max-width: 150px;
+    width: 90%;
+    margin: 1em;
+    padding: em;">
+
+    <a target="_blank" class="blau"
+    href="https://indico.hiskp.uni-bonn.de/event/2/page/2-home"><i>
+    <img src="pics/Poster_Multihadron_klein.jpg" width="95%">
+    </i></a>
+    </figure>
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+  The so-called <b>quantization condition</b> aims to bridge these
+  two worlds -- finite and infinite volume results. While the
+  general form of such a condition is not known, there is a large
+  interest in understanding three hadrons in the finite volume.
+  This will open the door to tackle several puzzles of modern
+  hadron physics. Recent international workshop dedicated to
+  this area of research has been held at the Bethe-Center in
+  for Theoretical Physics in Bonn (Germany) -
+  <a target="_blank" class="blau"
+  href="https://indico.hiskp.uni-bonn.de/event/2/page/2-home"><i>"
+  Multihadron Dynamics in a Box"</i></a>.
+  In recent years, I have worked on the derivation of <b>three-body
+  quantization condition</b>, the corresponding infinite-volume
+  amplitude, and applications to physical three-body systems
+  calculated on the lattice:
+
+
+
+
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=https://inspirehep.net/literature/1849284>
+  <i>``Multi-particle systems on the lattice and chiral extrapolations: a brief review''
+  </i>
+  </a>(2021)
+  <br>
+  <br>
+
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=https://inspirehep.net/literature/1841349>
+  <i>``Three-body interactions from the finite-volume QCD spectrum''
+  </i>
+  </a> (2021)
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=https://inspirehep.net/literature/1766164>
+  <i>``Three body spectrum from lattice QCD''
+  </i>
+  </a> (2020)
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1753707>
+  <i>``Three-body unitarity versus finite-volume &pi;<sup>+</sup>&pi;<sup>+</sup>&pi;<sup>+</sup> spectrum from lattice QCD''
+  </i>
+  </a> (2019)
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1681944>
+  <i>``Finite-volume spectrum of &pi;<sup>+</sup>&pi;<sup>+</sup> and &pi;<sup>+</sup>&pi;<sup>+</sup>&pi;<sup>+</sup> systems''
+  </i>
+  </a> (2018)
+  <!--M. Mai, M. Doring-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1654348>
+  <i>``Three-body spectrum in a finite volume: the role of cubic symmetry''
+  </i>
+  </a> (2018)
+  <!--M. Doring, H.W. Hammer, M. Mai, J.Y. Pang, A. Rusetsky, J. Wu-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1625299>
+  <i>``Three-body Unitarity in the Finite Volume''
+  </i>
+  </a>(2017)
+  <!--M. Mai, M. Doring-->
+
+
+
+  <br>
+  Above methods aim on mapping configurations manifested in finite and infinite volume directly.
+  Another methods may exist in extracting bulk properties of infinite volume quantities from a
+  set of finite volume configurations. I was very happy in working on development and applications of
+  such alternative techniques for the infinite volume mapping:
+  <br>
+
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1432704>
+  <i>``The Optical Potential on the Lattice''</i>
+  </a>(2016)
+  <!--D. Agadjanov, M. Doring, M. Mai, U.-G. Mei&szlig;ner and A. Rusetsky-->
+
+
+
+
+  <br>
+  <h3>Unphysical pion mass -- a chance and a challenge</h3>
+
+  In many lattice calculations the pion mass is higher than the physical one for techniqual reasons.
+  This technicality needs to be overcome (in addition to infinite volume mapping and continuum extrapolations)
+  when comparing lattice results to the physical ones. On the other side, it also is a chance to explore the
+  structure of QCD promoting a pion mass to a continious parameter, and exploring our understanding in this
+  orthogonal to the energy dimension.
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <figure style="
+    float: center;
+    max-width: 800px;
+    width: 100%;
+    text-align: justify;
+    font-style: italic;
+    font-size: smaller;
+    background-color: white;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0em;
+    padding: 0.5em;">
+
+    <img src="pics/Chiral-rainbow-3d.png" width="75%">
+    <figcaption>Two-pion scattering amplitude at twice the physical pion mass from Lattice QCD (colored points with error bars) vs. phenomenological model (red line) based on Chiral Perturbation Theory. [<a target="_blank" class="blau" href=http://inspirehep.net/record/1748151>REF</a>]</figcaption>
+  </figure>
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+  Chiral Perturbation Theory (see below) dictates the pion mass
+  dependence of QCD Green's functions allowing for the so-called <b>chiral
+  extrapolations</b>. In this context, I have studied several physical systems with and without resonances:
+
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=https://inspirehep.net/literature/1802679>
+  <i>``The rho-resonance with physical pion mass from Nf=2 lattice QCD''
+  </i>
+  </a>(2020)
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1748151>
+  <i>``A cross-channel study of pion scattering from lattice QCD''
+  </i>
+  </a>(2019)
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1736721>
+  <i>``Pion scattering in the isospin I=2 channel from elongated lattices''
+  </i>
+  </a>(2019)
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1659102>
+  <i>``Extraction of isoscalar &pi;&pi; phase-shifts from lattice QCD''
+  </i>
+  </a>(2018)
+  <!--D. Guo, A. Alexandru, R. Molina, M. Mai, M. Doring-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1613522>
+  <i>``Chiral symmetry constraints on resonant amplitudes''
+  </i>
+  </a>(2017)
+  <!--P. C. Bruns and M. Mai-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1593771>
+  <i>``Chiral Extrapolations of the &rho;(770) Meson in N<sub>f</sub>=2+1 Lattice QCD Simulations''
+  </i>
+  </a>(2017)
+  <!--B. Hu, R. Molina, M. Doring, M. Mai, A. Alexandru-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1495259>
+  <i>``Chiral Extrapolation of the Sigma Resonance''
+  </i>
+  </a>(2016)
+  <!--M. Doring, B. Hu and M. Mai-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1219963>
+  <i>``Finite volume effects and quark mass dependence of the N(1535) and N(1650)''
+  </i>
+  </a>(2013)
+  <!--M. Doring, M. Mai and U.-G. Mei&szlig;ner-->
+
+
+  <br><!-- %%%%%%%%%%%%%%%%%%%%%% -->
+
+  Selected talks for more details on topics described above and further references:
+  <a target="_blank" class="blau" href="/content/talks/Seminar-LBL-2019.pdf">
+  <strong>
+  Unitarity constraints on 3 hadron dynamics
+  </strong>
+  </a>
+  (Seminar at LBNL, 2019);
+  <a target="_blank" class="blau" href="/content/talks/conf-EXO-2020.pdf">
+  <strong>
+  2- and 3-body hasdron spectroscopy from LQCD
+  </strong>
+  </a>
+  (Talk at EXO2020 workshop 2020);
+  <a target="_blank" class="blau" href="/content/talks/conf-DNP-2019.pdf">
+  <strong>
+  Bridging phenomenology and lattice QCD in 3-body sector;
+  </strong>
+  </a>
+  (Talk at DNP/APS meeting 2019);
+  <a target="_blank" class="blau" href="/content/talks/Seminar-UMD-2018.pdf">
+  <strong>
+  Unitarity constraints on 3 hadron dynamics
+  </strong>
+  </a>
+  (Seminar talk at U. of Maryland, 2018);
+  <a target="_blank" class="blau" href="/content/talks/conf-LAT-2018.pdf">
+  <strong>
+  Application of 3-body quantization condition to QCD
+  </strong>
+  </a>
+  (Conference talk at Lattice 2018);
+  <a target="_blank" class="blau" href="/content/talks/Seminar-CERN-2018.pdf">
+  <strong>
+  3 body quantization condition from unitarity
+  </strong>
+  </a>
+  (Seminar talk at CERN, 2017);
+  <a target="_blank" class="blau" href="/content/talks/conf-LAT-2016.pdf">
+  <strong>
+  Retrieving the optical potential from lattice simulation
+  </strong>
+  </a>
+  (Conference talk at Lattice 2016).
+  <!-- %%%%%%%%%%%%%%%%%%%%%% -->
+
+  <br>
+
+
+
+  Many of these methods are rooted in S-matrix theory and previously derived
+  scattering amplitudes from effective field theories and chiral perturbation theory
+
+
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1328672>
+  <i>``Recoil corrections in antikaon-deuteron scattering''
+  </i>
+  </a>(2014)
+  <!--M. Mai, V. Baru, E. Epelbaum and A. Rusetsky-->
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/820717>
+  <i>``Aspects of meson-baryon scattering in three and two-flavor chiral perturbation theory''
+  </i>
+  </a>(2009)
+  <!--M. Mai, P. C. Bruns, B. Kubis and U.-G. Mei&szlig;ner-->
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- %%%%%%%%%%%%%%%%%%%%%% -->
+  Selected talks for more details on topics described above
+  and further references:
+
+  <a target="_blank" class="blau" href="/content/talks/conf-NSTAR-2017.pdf">
+  <strong>
+  Status of the Lambda(1405)
+  </strong>
+  </a>  (Plenary talk at NSTAR2017);
+  <a target="_blank" class="blau" href="/content/talks/Seminar-Valencia-2016.pdf">
+  <strong>
+  Chiral unitary KN amplitude vs photoproduction data
+  </strong>
+  </a>(Seminar at U. Valencia);
+  <a target="_blank" class="blau" href="/content/talks/conf-NSTAR-2013.pdf">
+  <strong>
+  Pion photoproduction in gauge invariant unitary approach
+  </strong>
+  </a>(Talk at NSTAR 2013);
+  <a target="_blank" class="blau" href="/content/talks/Seminar-Bonn-2012.pdf">
+  <strong>
+  Coupled-channel Bethe-Salpeter approach
+  </strong>
+  </a> (Seminar at U. Bonn);
+  <a target="_blank" class="blau" href="/content/conf-FewBody-2015.pdf">
+  <strong>
+  Recoil corrections in antikaon-deuteron scattering
+  </strong>
+  </a>(Talk at Few Body 2015);
+  <a target="_blank" class="blau" href="/content/talks/Seminar-Bonn-2010.pdf">
+  <strong>
+  Meson-baryon scattering in SU(3) ChPT
+  </strong></a>
+  (Seminar at U. Bonn).
+  <!-- %%%%%%%%%%%%%%%%%%%%%% -->
+  <br>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <div class="w3-container" style="margin-bottom:32px" id="CP">
+  <h2>CP violation</h2>
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+  [...under construction]
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <figure style="
+    float: center;
+    max-width: 800px;
+    width: 95%;
+    text-align: justify;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    background-color: white;
+    border: thin silver solid;
+    margin: 0em;
+    padding: 0.5em;">
+
+    <img src="pics/CPlambda.png" width="90%">
+    <figcaption>
+    Illustration of the weak decay parameter of the strange &Lambda; baryon, called &alpha;-</figcaption>
+  </figure>
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1730019>
+  <i>``Kaon Photoproduction and the &Lambda; Decay Parameter &alpha;-''
+  </i></a>(2019)
+
+  <br>
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1385763>
+  <i>``&theta;-dependence of the lightest meson resonances in QCD''
+  </i></a>(2013)
+
+  <br>
+  <!-- %%%%%%%%%%%%%%%%%%%%%% -->
+  Selected talks for more details on topics described
+  above and further references:
+
+  <a target="_blank" class="blau" href="/content/talks/conf-MENU-2019.pdf">
+  <strong>
+  determination of the Lambda decay parameter
+  </strong>
+  </a>  (Talk at MENU 2019);
+  <!-- %%%%%%%%%%%%%%%%%%%%%% -->
+  <br>
+
+  </div>
+
+
+
+
+
+
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <div class="w3-container" style="margin-bottom:32px" id="ML">
+  <h2>Model selection</h2>
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+  [...under construction]
+  <br>
+
+  <i class="fa fa-file-text" style="width:30px"> </i>
+  <a target="_blank" class="blau" href=http://inspirehep.net/record/1696458>
+  <i>``Towards the Minimal Spectrum of Excited Baryons''
+  </i></a>(2019)
+  <br>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+    Ⓒ2021 by Maxim Mai created with
+    <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </footer>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- End page content -->
+<!-- End page content -->
+<!--  -->
+
+<!--  -->
+
+
+<!--  -->
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!--  -->
+
+
+
+</body>
+</html>
+

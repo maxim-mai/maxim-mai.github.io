@@ -6,6 +6,13 @@
 }
 
 
+
+
+
+
+
+
+
 /* %%%%%%%%%%%%%%%%%%%%%% SLIDER %%%%%%%%%%%%%%%%%%%%%% */
 * {box-sizing: border-box;}
 
@@ -83,6 +90,7 @@ a.blau:link {
     color: blue;
     background-color: transparent;
     text-decoration: none;
+    text-decoration:underline;
 }
 /* a.blau:visited {
     color: blue;
