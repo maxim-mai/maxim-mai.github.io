@@ -9,10 +9,6 @@
 
 
 
-
-
-
-
 /* %%%%%%%%%%%%%%%%%%%%%% SLIDER %%%%%%%%%%%%%%%%%%%%%% */
 * {box-sizing: border-box;}
 
@@ -54,7 +50,6 @@
     width: 500px;
   }
 }
-
 /* %%%%%%%%%%%%%%%%%%%%%% END SLIDER %%%%%%%%%%%%%%%%%%%%%% */
 
 
@@ -68,7 +63,7 @@
   alignment: below;
 }
 
-@media (min-width:601px){
+/* @media (min-width:601px){
 .content{
   position: absolute;
   background: rgba(999, 999, 999, 0.3);
@@ -76,7 +71,7 @@
   height:30%;
   left: 0%;
   top: 3%;
-  bottom: auto;}
+  bottom: auto;} */
 /* %%%%%%%%%%%%%%%%%%%%%% end header %%%%%%%%%%%%%%%%%%%%%% */
 
 a.blau, a.blau:visited {
@@ -92,11 +87,6 @@ a.blau:link {
     text-decoration: none;
     text-decoration:underline;
 }
-/* a.blau:visited {
-    color: blue;
-    background-color: transparent;
-    text-decoration: none;
-} */
 
 /* Bottom right text */
 .text-block {
