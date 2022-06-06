@@ -14,13 +14,13 @@
 
 .img-comp-container {
   position: relative;
-  height: 280px; /*should be the same height as the images*/
+  height: 300px; /*should be the same height as the images*/
 }
 
 .img-comp-img {
   position: absolute;
   width: auto;
-  height: 280px;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -31,11 +31,11 @@
 
 .img-comp-slider {
   position: absolute;
-  z-index: 9;
+  z-index: 8;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
   width: 30px;
-  height: 200px;
+  height: 300px;
   background-color: #2196F3;
   opacity: 0.8;
   border-radius: 1%;

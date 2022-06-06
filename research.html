@@ -59,7 +59,7 @@ function initComparisons() {
   function compareImages(img) {
     var slider, img, clicked = 0, w, h;
     /*get the width and height of the img element*/
-    w = img.offsetWidth-20;
+    w = img.offsetWidth+0;
     h = img.offsetHeight;
     /*set the width of the img element to 50%:*/
     img.style.width = (w / 2) + "px";
@@ -99,7 +99,7 @@ function initComparisons() {
       /*get the cursor's x position:*/
       pos = getCursorPos(e)
       /*prevent the slider from being positioned outside the image:*/
-      if (pos < 75) pos = 75;
+      if (pos < 25) pos = 25;
       if (pos > w) pos = w;
       /*execute a function that will resize the overlay image according to the cursor:*/
       slide(pos);
@@ -413,8 +413,7 @@ function initComparisons() {
   Lattice QCD with phenomenological observations. The discretization
   effects are well under control, dealt with continuum extrapolations.
   Mathematically more intricate and interesting effects arise from
-  the finiteness  of the lattice setup -- the so-called <b>finite
-  volume effects</b>. At the core, the issue is that a finite
+  the finiteness  of the lattice setup -- the so-called <b>finite-volume effects</b>. At the core, the issue is that a finite
   coordinate space induces the need for boundary conditions, which
   induces the discretization of the momentum-space and the spectrum
   of the QCD Hamiltonian -- see figure below.
@@ -424,7 +423,8 @@ function initComparisons() {
     <figure style="
     float: center;
     max-width: 800px;
-    margin-left: 85px;
+    padding-left: 0px;
+    margin-left: 0px;
     width: 100%;
     text-align: justify;
     font-style: italic;
@@ -437,10 +437,10 @@ function initComparisons() {
 
     <div class="img-comp-container">
       <div class="img-comp-img">
-        <img style="margin-left: 75px;" src="pics/INFVOL.jpg" class="chart-img">
+        <img style="margin-left: 0px;" src="pics/INFVOL.jpg" class="chart-img">
       </div>
       <div class="img-comp-img img-comp-overlay">
-        <img style="margin-left: 75px;" src="pics/FINVOL.jpg" class="chart-img">
+        <img style="margin-left: 0px;" src="pics/FINVOL.jpg" class="chart-img">
       </div>
     </div>
 
@@ -449,11 +449,10 @@ function initComparisons() {
     </script>
 
     <figcaption>
-    Two scalar particle scattering amplitude <b>T</b> in finite and infinite volume. <u>In finite volume:</u> It is a real-valued and singular function of interaction energy. Position of the poles corresponds to the energy eigenvalues to be measured in a corresponding lattice setup. <u>In infinte volume:</u> It is an analytic complex valued
-    function of energy. Its squared value is proportional to experimentally accessible quantities. Extrapolating to complex
-    energies universal properties of resonances can be extracted. --
-    <b>Pull the blue bar to switch between both "worlds". X-axis
-    denotes the scattering energy in terms of the pion mass.
+    Two-particle scattering amplitude <b>T</b> in a finite and infinite volume. <u>In a finite volume:</u> It is a real-valued and singular function of interaction energy (E: X-axis in units of particle mass M). Position of the poles corresponds to the energy eigenvalues to be measured in a corresponding lattice setup. <u>In the infinte volume:</u> It is holomorphic complex-valued
+    function of energy.
+<!-- Its squared value is proportional to experimentally accessible quantities. Extrapolating to complex    energies universal properties of resonances can be extracted. -- -->
+    <b>Pull the blue bar to switch between both "worlds".
     </b>
     </figcaption>
     </figure>
