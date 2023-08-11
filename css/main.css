@@ -4,7 +4,21 @@
   max-width: 800px; /* Maximum width */
   margin: 0 auto; /* Center it */
 }
+.containerAI {
+  display: flex;
+  align-items: center;
+}
 
+.image {
+  width: 35%;
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.text {
+  width: 65%;
+  display: block;
+  text-align: justify;
+}
 
 
 
