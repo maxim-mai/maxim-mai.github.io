@@ -19,6 +19,8 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
+
+
 <title>Maxim Mai</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,30 +29,55 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px" background="pics/bg1.png">
+<body class="w3-light-grey w3-content" style="max-width:4000px" background="pics/bg1.png">
 
-<!-- Sidebar/menu -->
+
+
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%% SidebarMenu %%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<!--%%%%%%% BigScreen %%%%%%%%-->
 <nav class="w3-sidebar w3-white w3-collapse w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
   <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="pics/profil-2-avatar.jpg" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>Maxim Mai</b></h4>
-    <p class="w3-text-grey">personal homepage</p>
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="pics/YingYangYang.png" style="width:95%;" class="image">
+      <br>
+      <br>
+      <h4>
+        <b>Maxim Mai</b>
+      </h4>
+      <p class="w3-text-grey">personal homepage</p>
   </div>
   <div class="w3-bar-block">
-    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-rocket fa-fw w3-margin-right"></i>RESEARCH</a>
-    <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-university fa-fw w3-margin-right"></i>TEACHING/OUTREACH</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT ME</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+      <i class="fa fa-rocket fa-fw w3-margin-right"></i>
+      RESEARCH
+    </a>
+    <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+      <i class="fa fa-university fa-fw w3-margin-right"></i>
+      TEACHING/OUTREACH
+    </a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+      <i class="fa fa-user fa-fw w3-margin-right"></i>
+      ABOUT ME
+    </a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+      <i class="fa fa-envelope fa-fw w3-margin-right"></i>
+      CONTACT
+    </a>
   </div>
 </nav>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!--%%%%%%% Small screen %%%%%%%%-->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+</div>
 
 
 
@@ -65,30 +92,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!--%%%%%%%%% Header %%%%%%%%%%%-->
   <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
   <header>
-    <a href="#"><img src="pics/profil-2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <!-- <div class="w3-container">
-    <h1><b>Maxim Mai</b></h1><br>
-    </div> -->
   </header>
+  <br>
 
 
 
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <!--%%%%%%%%% Research %%%%%%%%%-->
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <div class="w3-container" style="margin-bottom:12px;margin-right:64px;background-color:#d7d7d7;" id="research">
 
-
-    <br>
-
-
-
-<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-<!--%%%%%%%%% Research %%%%%%%%%-->
-<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-  <div class="w3-container" style="margin-bottom:12px;margin-right:64px;background-color:#A9A9A9;" id="research">
-
-  <h1><b>Research</b></h1>
+  <h1>
+    <b>
+      Research
+    </b>
+  </h1>
 
   <div class="containerAI">
-    <img src="pics/YingYangYang.png" alt="Your Image" class="image" style="width:15%" >
     <div class="text">
       <p> My research focuses on properties of strongly interacting matter. The main directions of my research include Effective Field Theories, Lattice QCD, S-matrix theory, Phenomneology and statistics. Below you can find some information about individual topics. Please feel free to reach out if you are interested in collaborations or thesis projects.
       </p>
@@ -97,116 +118,154 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div> -->
     </div>
   </div>
-  <br><br><br>
+  <br>
+  <br>
+  <br>
 
 
-
-
-  <!-- First Photo Grid-->
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <!--%%%%%%%% Photo Grid %%%%%%%%-->
   <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="research.html#resonances"><img src="pics/3D-plot.png" alt="Resonances" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Resonances</b></p>
+
+    <div class="w3-third w3-container w3-margin-bottom"r>
+      <a href="research.html#resonances">
+        <img src="pics/3D-plot.png" alt="Resonances" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-white" style="text-align: center;">
         <p>
-        ->   <a href="research.html#resonances">click here for more details</a>
-        </p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="research.html#LQCD"><img src="pics/Lattice.png" alt="LQCD" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Lattice QCD</b></p>
-        <p>
-        ->   <a href="research.html#LQCD">click here for more details</a>
+          <b>
+            Resonances
+          </b>
         </p>
       </div>
     </div>
 
     <div class="w3-third w3-container">
       <a href="research.html#EFT"><img src="pics/EFT.png" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Effective field theory</b></p>
+      <div class="w3-container w3-white" style="text-align: center;">
         <p>
-        ->   <a href="research.html#EFT">click here for more details</a>
+          <b>
+            Effective field theory
+          </b>
         </p>
       </div>
     </div>
 
-
-
-
   </div>
 
-
-  <!-- Second Photo Grid-->
   <div class="w3-row-padding">
 
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="research.html#LQCD">
+        <img src="pics/Lattice.png" alt="LQCD" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-white" style="text-align: center;">
+        <p>
+          <b>
+            Lattice QCD
+          </b>
+        </p>
+      </div>
+    </div>
 
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="research.html#PHENO"><img src="pics/pheno.png" alt="pheno" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Phenomenology</b></p>
+      <a href="research.html#PHENO">
+        <img src="pics/pheno.png" alt="pheno" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-white" style="text-align: center;">
         <p>
-        ->   <a href="research.html#PHENO">click here for more details</a>
+          <b>
+            Phenomenology
+          </b>
         </p>
       </div>
     </div>
-
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="research.html#CP"><img src="pics/CP.png" alt="CP" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>CP-violation</b></p>
-        <p>
-        ->   <a href="research.html#CP">click here for more details</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="w3-third w3-container">
-      <a href="research.html#ML"><img src="pics/ML.png" alt="ML" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Model selection</b></p>
-        <p>
-        ->   <a href="research.html#ML">click here for more details</a>
-        </p>
-      </div>
-    </div>
-
 
   </div>
 
+  <div class="w3-row-padding">
 
-
-  <!-- Pagination -->
-  <!-- <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="research.html#CP">
+        <img src="pics/CP.png" alt="CP" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-white" style="text-align: center;">
+        <p>
+          <b>
+            CP-violation
+          </b>
+        </p>
+      </div>
     </div>
-  </div> -->
+    
+    <div class="w3-third w3-container">
+      <a href="research.html#ML">
+        <img src="pics/ML.png" alt="ML" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-white" style="text-align: center;">
+        <p>
+          <b>
+            Model selection
+          </b>
+        </p>
+      </div>
+    </div>
+  </div>
+
 
 
   <!-- <div class="w3-container" style="margin-bottom:64px"> -->
-    <h3><b>Related links</b></h3>
-      <a target="_blank" class="blau" href="http://pdglive.lbl.gov/Viewer.action"><b>Particle Data Group</b></a> -- World Data Base for fundamental particles (open access)<br>
-      <a target="_blank" class="blau" href="https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html"><b>Nuclides</b></a> -- Live Chart of Nuclides (open access)<br>
-      <a target="_blank" class="blau" href="https://arxiv.org"><b>arXiv.org</b></a> -- main research article server (open access)<br>
-      <a target="_blank" class="blau" href="https://inspirehep.net"><b>iNSPIREhep</b></a> -- search plattform for nuclear, hadron, high-energy papers<br>
-      <a target="_blank" class="blau" href="https://www.overleaf.com?r=51819c1a&rm=d&rs=b"><b>Overleaf</b></a> -- Free, online collaborative LaTeX Editor Overleaf
+    <h3>
+      <b>
+        Related links
+      </b>
+    </h3>
+      <a target="_blank" class="blau" href="http://pdglive.lbl.gov/Viewer.action">
+        <b>
+          Particle Data Group
+        </b>
+      </a> -- World Data Base for fundamental particles (open access)
+      <br>
+      <a target="_blank" class="blau" href="https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html">
+        <b>
+          Nuclides
+        </b>
+      </a> -- Live Chart of Nuclides (open access)
+      <br>
+      <a target="_blank" class="blau" href="https://arxiv.org">
+        <b>
+          arXiv.org
+        </b>
+      </a> -- main research article server (open access)
+      <br>
+      <a target="_blank" class="blau" href="https://inspirehep.net">
+        <b>
+          iNSPIREhep
+        </b>
+      </a> -- search plattform for nuclear, hadron, high-energy papers
+      <br>
+      <a target="_blank" class="blau" href="https://www.overleaf.com?r=51819c1a&rm=d&rs=b">
+        <b>
+          Overleaf
+        </b>
+      </a> -- Free, online collaborative LaTeX Editor Overleaf
 
 
 
+    <h3>
+      <b>
+        Seminars/Conferences
+      </b>
+    </h3>
 
-    <h3><b>Seminars/Conferences</b></h3>
-
-      <b>Theory HISKP Seminar Schedule:</b>
+      <b>
+        Theory HISKP Seminar Schedule:
+      </b>
       <a target="_blank" class="blau" href="https://indico.hiskp.uni-bonn.de/category/35/">
-      <i>HISKP Theory</i></a>
+        <i>
+          HISKP Theory
+        </i>
+      </a>
       <br>
 
 
@@ -259,17 +318,36 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
   <!--%%%%%%%%% TEACHING %%%%%%%%%-->
   <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-  <!-- <div class="w3-container" style="margin-bottom:12px;margin-right:420px;background-color:#D5D5D5;" id="teaching">
-    <h1><b>Teaching/Outreach</b></h1>
-  </div> -->
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px;margin-right:64px;background-color:#c1c1c1;" id="teaching">
     <h1><b>Teaching/Outreach</b></h1>
 
 
+    <b>
+      Winter 2023/24 - Theoretical Hadron Physics
+    </b>
+    <br>
+    >> <a target="_blank" class="blau" href="https://ecampus.uni-bonn.de/goto.php?target=crs_3075188&client_id=ecampus">
+      <b>
+        eCampus lecture page
+      </b>
+    </a>
+    <br>
+    >> Lectures take place Wednesdays 9-12am(ct), in HISKP / Lecture hall 1, Nussallee 14-16
+    <br>
+    >> Group exercises will take place according to the polling on eCampus
+    <br>
+    <br>
 
-    <b>REYES -- Mentoring program </b><a target="_blank" class="blau" href="https://physics.berkeley.edu/visiting-students/reyes-remote-experience-young-engineers-and-scientists"><b>[link to registration/official page]</b></a>
-    <br>>> <b>``Crashcourse on model building and fits for particle scattering''</b>
+    <b>
+      REYES -- Mentoring program 
+    </b>
+    <a target="_blank" class="blau" href="https://physics.berkeley.edu/visiting-students/reyes-remote-experience-young-engineers-and-scientists">
+      <b>[link to registration/official page]
+      </b>
+    </a>
+    <br>
+    >> <b>``Crash course on model building and fits for particle scattering''</b>
     <a target="_blank" class="blau" href="teaching/REYES-P28.pdf"><i><b>Topics overview</i></b></a>
     <br>>> Zoom meetings Tuesday 2pm-5pm CEST 
     <br>>> Reports due Monday 12am CEST
@@ -385,9 +463,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <br>
         Feel free to contact me for any questions to my research or for teaching materials.
       </p>
-      <!-- <div id="footnote1">
-        <p>[1] most of the mass is probably in Dark Matter or due to even more misterious effects for which there are many bigger experts in the world. .</p>
-      </div> -->
     </div>
   </div>
 
