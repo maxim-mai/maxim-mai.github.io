@@ -1,7 +1,7 @@
  /* Container holding the image and the text */
 .container {
   position: relative;
-  max-width: 800px; /* Maximum width */
+  max-width: 900px; /* Maximum width */
   margin: 0 auto; /* Center it */
 }
 .containerAI {
@@ -13,9 +13,8 @@
   width: 35%;
   margin-right: 20px; /* Adjust the margin as needed */
 }
-
 .text {
-  width: 65%;
+  width: 75%;
   display: block;
   text-align: justify;
 }
