@@ -215,7 +215,7 @@ img:hover {
 
 .w3-main,#main{transition:margin-left .4s}
 
-@media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:20px!important;margin-right:20!important}.w3-auto{max-width:100%}}
+@media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:10px!important;margin-right:-30px!important}.w3-auto{max-width:100%}}
 
 
 @media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
