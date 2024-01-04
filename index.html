@@ -12,7 +12,7 @@
 <title>Maxim Mai</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
+<!-- <link rel="stylesheet" href="css/w3.css"> -->
 <link rel="stylesheet" href="css/main.css" type="text/css"/>
 <style>
   body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, Arial, Helvetica}
@@ -27,10 +27,10 @@
 <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
 
 <!--%%%%%%% BigScreen %%%%%%%%-->
-<nav class="w3-sidebar w3-white w3-collapse w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-white w3-collapse w3-animate-left" style="z-index:3;width:250px;margin-left:-8px" id="mySidebar"><br>
   <div class="w3-container">
-      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-        <i class="fa fa-remove"></i>
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+        x
       </a>
       <img src="pics/YingYangYang.png" style="width:90%;" class="image">
       <br>
@@ -61,9 +61,9 @@
 </div>
 <!--%%%%%%%%% Header %%%%%%%%%%%-->
 <header>
-  <span class="w3-button w3-hide-large" onclick="w3_open()">
+  <span onclick="w3_open()">
     <i>
-      <img align=left src="pics/YingYangYang.png" style="width:10%;" class="image">
+      <img src="pics/menu-button1.png" style="width:35px;height:8%;position:fixed;margin-left:-10px;" class="image">
     </i>
   </span>
 </header>
@@ -96,17 +96,15 @@
         </a>
         <br>
         <br>
-        <a href="research.html#resonances"><img src="pics/pheno.png" style="width:30%;" class="circle"/>
-        <a href="research.html#CP"><img src="pics/CP.png" style="width:30%;" class="circle"/>
-        <a href="research.html#ML"><img src="pics/ML.png" style="width:30%;" class="circle"/>
+        <a href="research.html#resonances"><img src="pics/pheno.png" style="width:30%;" class="circle"></a>
+        <a href="research.html#CP"><img src="pics/CP.png" style="width:30%;" class="circle"></a>
+        <a href="research.html#ML"><img src="pics/ML.png" style="width:30%;" class="circle"></a>
       </div>
     </div>
     <br>
 
 
 
-
-  <!-- <div class="w3-container" style="margin-bottom:64px"> -->
     <h3>
       <b>
         Related links
@@ -394,21 +392,16 @@
   <div class="w3-container" style="max-width:800px;margin-bottom:2px;margin-right:64px;background-color:#e7e5e5;"id="about">
     <h1><b>About Me</b></h1>
 
-  <!-- <div class="w3-container">
-    <div class="w3-col m6">
-      <img src="pics/profil-2.jpg" alt="Me" style="width:100%">
+    <div class="containerAI">
+      <img src="pics/profil-2.jpg" alt="Your Image" class="image" style="width:35%" >
+      <div class="text" style="width: 65%;">
+        <p> 
+          I am a theoretical physicist in nuclear and hadron physics. I work as a Senior Fellow at the <a target="_blank" class="blue"  href="https://www.hiskp.uni-bonn.de/">Helmholtz-Institut für Strahlen- und Kernphysik</a> of the University Bonn, and as a Research Professor at <a target="_blank" class="blue"  href="https://physics.columbian.gwu.edu/">The George Washington University</a>. My main interest include origin of excited states of matter, Quantum Chromodynamics in continuum and on the lattice, Effective Field Theories, Quantization conditions, Machine learning and model selection applications.
+          <br>
+          Feel free to contact me for any questions to my research or for teaching materials.
+        </p>
+      </div>
     </div>
-  </div> -->
-  <div class="containerAI">
-    <img src="pics/profil-2.jpg" alt="Your Image" class="image" style="width:35%" >
-    <div class="text" style="width: 65%;">
-      <p> 
-        I am a theoretical physicist in nuclear and hadron physics. I work as a Senior Fellow at the <a target="_blank" class="blue"  href="https://www.hiskp.uni-bonn.de/">Helmholtz-Institut für Strahlen- und Kernphysik</a> of the University Bonn, and as a Research Professor at <a target="_blank" class="blue"  href="https://physics.columbian.gwu.edu/">The George Washington University</a>. My main interest include origin of excited states of matter, Quantum Chromodynamics in continuum and on the lattice, Effective Field Theories, Quantization conditions, Machine learning and model selection applications.
-        <br>
-        Feel free to contact me for any questions to my research or for teaching materials.
-      </p>
-    </div>
-  </div>
   <h3>
     <b>
       Contact
