@@ -87,14 +87,14 @@
   bottom: auto;} */
 /* %%%%%%%%%%%%%%%%%%%%%% end header %%%%%%%%%%%%%%%%%%%%%% */
 
-a.blau, a.blau:visited {
+a.blue, a.blue:visited {
       color: blue;
       background-color: transparent;
       text-decoration: none;
  }
 
 
-a.blau:link {
+a.blue:link {
     color: blue;
     background-color: transparent;
     text-decoration: none;
