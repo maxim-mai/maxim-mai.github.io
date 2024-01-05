@@ -1,3 +1,12 @@
+ 
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+ 
+ 
  /* Container holding the image and the text */
 .container {
   position: relative;
