@@ -1,70 +1,178 @@
 <!DOCTYPE html>
 <html>
-<title>Maxim Mai/Talks</title>
+
+<!-- MATHJAX INCLUSION -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- example: \( \pi \) -->
+<!-- MATHJAX INCLUSION -->
+
+
+<!-- Page style -->
+<title>Maxim Mai</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
+<!-- <link rel="stylesheet" href="css/w3.css"> -->
 <link rel="stylesheet" href="css/main.css" type="text/css"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, Arial, Helvetica}
 </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px" background="pics/bg2.png">
+<body style="max-width:4000px;"   background="pics/bg1.png">
+<!-- Page style -->
 
 
 
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%% SidebarMenu %%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!--%%%%%%% BigScreen %%%%%%%%-->
+<nav class="w3-sidebar w3-white w3-collapse w3-animate-left" style="z-index:3;width:250px;margin-left:-8px" id="mySidebar"><br>
+  <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+        x
+      </a>
+      <img src="pics/YingYangYang.png" style="width:90%;
+      pointer-events: none;" class="image">
+      <br>
+      <br>
+      <h4>
+        <b>Maxim Mai</b>
+      </h4>
+      <p class="text" style="color: rgb(136, 136, 136);">Talks</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+      << MAIN PAGE
+    </a>
+  </div>
+</nav>
 
+<!--%%%%%%% Small screen %%%%%%%%-->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+</div>
+<!--%%%%%%%%% Header %%%%%%%%%%%-->
+<header>
+  <span onclick="w3_open()">
+    <i>
+      <img src="pics/menu-button1.png" style="width:35px;height:70px;position:fixed;margin-left:-10px;" class="image">
+    </i>
+  </span>
+</header>
 
 
 <!--********************************************************************-->
 <!--************************** !PAGE CONTENT! **************************-->
 <!--********************************************************************-->
-<div class="w3-main" style="margin-left:20px">
-
-<h5>
-
-  <a class="blau"  href="index.html"><b><< GO BACK</b></a><br><br>
-
-
-  <a target="_blank" class="blau" href="talks/MENU10-MM.pdf"><b>MENU-2010</b></a><br>
-  <a target="_blank" class="blau" href="talks/PANIC11-MM.pdf"><b>PANIC-2011</b></a><br>
-  <a target="_blank" class="blau" href="talks/NSTAR-2013.pdf"><b>NSTAR-2013</b></a><br>
-  <a target="_blank" class="blau" href="talks/FB-2015.pdf"><b>FewBody-2015</b></a><br>
-  <a target="_blank" class="blau" href="talks/CD15-MM-2.pdf"><b>Chiral Dynamics - 2015 (Lambda)</b></a><br>
-  <a target="_blank" class="blau" href="talks/CD15-MM-1.pdf"><b>Chiral Dynamics - 2015 (Kd)</b></a><br>
-  <a target="_blank" class="blau" href="talks/LAT-2016.pdf"><b>LATTICE-2016</b></a><br>
-  <a target="_blank" class="blau" href="talks/NSTAR-2017.pdf"><b>NSTAR-2017</b></a><br>
-  <a target="_blank" class="blau" href="talks/LAT-2018.pdf"><b>LATTICE-2018</b></a><br>
-  <a target="_blank" class="blau" href="talks/DNP-2019.pdf"><b>DNP-2019</b></a><br>
-  <a target="_blank" class="blau" href="talks/MENU-2019.pdf"><b>MENU-2019</b></a><br>
-  <a target="_blank" class="blau" href="talks/EXO-2020.pdf"><b>EXO-2020</b></a><br>
-  <a target="_blank" class="blau" href="talks/LAT21-MM.pdf"><b>LATTICE-2021</b></a><br>
-  <a target="_blank" class="blau" href="talks/HADRON21-MM.pdf"><b>HADRON-2021</b></a><br>
-  <a target="_blank" class="blau" href="talks/PWA21-MM.pdf"><b>PWA/ATHOS-2021</b></a><br>
-  <a target="_blank" class="blau" href="talks/CD21-MM.pdf"><b>Chiral Dynamics - 2021</b></a><br>
-  <a target="_blank" class="blau" href="talks/LAT22-MM.pdf"><b>LATTICE QCD - 2022</b></a><br>
-
-  <a target="_blank" class="blau" href="talks/Seminar-UMD-2022.pdf"><b>Seminar: University of Maryland (2022)</b></a><br>
-  <a target="_blank" class="blau" href="talks/Seminar-GWU-2022.pdf"><b>Seminar: The George Washington University (2022)</b></a><br>
-  <a target="_blank" class="blau" href="talks/JPARC-2022.pdf"><b>Workshop: Hadron physics with kaon beam and related</b></a><br>
-  <a target="_blank" class="blau" href="talks/NSTAR-2022.pdf"><b>NSTAR-2022
-
-  <a target="_blank" class="blau" href="talks/INT2023-MaximMai.pdf"><b>INT workshop 2023</b></a><br>
-  <a target="_blank" class="blau" href="talks/HADRON2023x-MaximMai.pdf"><b>Hadron 2023</b></a><br>
-  <a target="_blank" class="blau" href="talks/2023-SPOOKYseminar-GWU.pdf"><b>HALLOWEEN SEMINAR AT GWU 2023</b></a><br>
+<div 
+  class="w3-main" 
+  style="
+    margin-left:270px;
+    align-items:center;
+    justify-content:center;">
 
 
+  <!--%%%%%%%%% NEW TEXT BLOCK %%%%%%%%%-->
+  <div 
+    class="w3-container"
+    style="
+      max-width:800px;
+      margin-bottom:12px;
+      margin-right:40px;
+      background-color:#e7e5e5;"
+    id="xxx">
+    <h1>
+        Talks and presentations
+    </h1>
+    <div class="text" style="width:95%;">
+      <ul style="list-style-type:circle;">
+        <li>
+          <a target="_blank" class="blau" href="talks/MENU10-MM.pdf"><b>MENU-2010</b></a><br>
+        </li>
+        <li>
+          <a target="_blank" class="blau" href="talks/PANIC11-MM.pdf"><b>PANIC-2011</b></a><br>
+          </li>
+          <li>
+          <a target="_blank" class="blau" href="talks/NSTAR-2013.pdf"><b>NSTAR-2013</b></a><br>
+          </li>
+          <li>
+          <a target="_blank" class="blau" href="talks/FB-2015.pdf"><b>FewBody-2015</b></a><br>
+          </li>
+          <li>
+          <a target="_blank" class="blau" href="talks/CD15-MM-2.pdf"><b>Chiral Dynamics - 2015 (Lambda)</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/CD15-MM-1.pdf"><b>Chiral Dynamics - 2015 (Kd)</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/LAT-2016.pdf"><b>LATTICE-2016</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/NSTAR-2017.pdf"><b>NSTAR-2017</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/LAT-2018.pdf"><b>LATTICE-2018</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/DNP-2019.pdf"><b>DNP-2019</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/MENU-2019.pdf"><b>MENU-2019</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/EXO-2020.pdf"><b>EXO-2020</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/LAT21-MM.pdf"><b>LATTICE-2021</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/HADRON21-MM.pdf"><b>HADRON-2021</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/PWA21-MM.pdf"><b>PWA/ATHOS-2021</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/CD21-MM.pdf"><b>Chiral Dynamics - 2021</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/LAT22-MM.pdf"><b>LATTICE QCD - 2022</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/Seminar-UMD-2022.pdf"><b>Seminar: University of Maryland (2022)</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/Seminar-GWU-2022.pdf"><b>Seminar: The George Washington University (2022)</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/JPARC-2022.pdf"><b>Workshop: Hadron physics with kaon beam and related</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/NSTAR-2022.pdf"><b>NSTAR-2022
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/INT2023-MaximMai.pdf"><b>INT workshop 2023</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/HADRON2023x-MaximMai.pdf"><b>Hadron 2023</b></a><br>
+          </li>
+          <li>
+            <a target="_blank" class="blau" href="talks/2023-SPOOKYseminar-GWU.pdf"><b>HALLOWEEN SEMINAR AT GWU 2023</b></a><br>
+          </li>
+          <li>
+        </ul>
+    </div>
+    <br>
+  </div>
+  <br>
 
 
-</h5>
 
 
 
-  <br><br><br><br>
+
+
+
+
 
 
 
@@ -72,12 +180,36 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 
 </div>
+  
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%  End page content %%%%%%%%%%%%%%%%% -->
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
 </html>
