@@ -3,7 +3,8 @@
 
 <!-- MATHJAX INCLUSION -->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <!-- example: \( \pi \) -->
 <!-- MATHJAX INCLUSION -->
 
@@ -12,260 +13,82 @@
 <title>Maxim Mai</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="css/w3.css"> -->
-<link rel="stylesheet" href="css/main.css" type="text/css"/>
-<style>
-  body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, Arial, Helvetica}
-</style>
-<body style="max-width:4000px;"   background="pics/bg1.png">
+<link rel="stylesheet" href="main.css" type="text/css"/>
 <!-- Page style -->
 
 
 
-<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-<!--%%%%%%% SidebarMenu %%%%%%%%-->
-<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<!--%%%%%%%%%%%%%% NAVIGATION MENU %%%%%%%%%%%%%%-->
 
 <!--%%%%%%% BigScreen %%%%%%%%-->
-<nav class="w3-sidebar w3-white w3-collapse w3-animate-left" style="z-index:3;width:250px;margin-left:-8px" id="mySidebar"><br>
-  <div class="w3-container">
-      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
-        x
-      </a>
-      <img class="image" src="pics/YingYangYang.png" style="width:90%;pointer-events: none;">
-      <br>
-      <br>
-      <h4>
-        <b>Maxim Mai</b>
-      </h4>
-      <p class="text" style="color: rgb(136, 136, 136);">personal homepage</p>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
-      > RESEARCH
+<nav class="w3-sidebar w3-collapse w3-animate-left" style="
+  z-index:1;
+  width:220px;
+  margin-left:-8px;
+  border-right: 1px solid #c6c6c6;
+  margin-top:-10px" id="mySidebar">
+  <br>
+  <div class="w3-container" style="border: none">
+    <!-- <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu"> -->
+      <img class="image" src="pics/YYY.png" style="width:100%;">
+    <!-- </a> -->
+      <!-- <br> -->
+      <p class="text" style="font-size:bigger;margin-bottom:-10px;">
+          <b>Maxim Mai</b>
+      </p>
+      <p class="text" style="color: rgb(130, 130, 130);font-size: smaller;">
+        personal homepage
+      </p>
+    <a href="#research" onclick="w3_close()" class="fixed-width-underline">
+      Research
     </a>
-    <a href="#talks" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
-      > TALKS
+    <br>
+    <a href="talks.html" onclick="w3_close()" class="fixed-width-underline">
+      Talks
     </a>
-    <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
-      > TEACHING
+    <br>
+    <a href="#teaching" onclick="w3_close()" class="fixed-width-underline">
+      Teaching
     </a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
-      > ABOUT ME
+    <br>
+    <a href="#outreach" onclick="w3_close()" class="fixed-width-underline">
+      Outreach
     </a>
-  </div>
+  <!-- </div> -->
 </nav>
 
 <!--%%%%%%% Small screen %%%%%%%%-->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+<!-- <div class="w3-overlay w3-hide-large w3-animate-opacity"> -->
+<div class="topbar topbar-collapse">
+    <img class="image" src="pics/YYY.png" style="width:10%;width:10%;margin:2px 10px 2px 0 ;pointer-events:none">
+    <div class="top-menu-left">
+      <a href="index.html">
+        <!-- <b> -->
+          <span>Maxim Mai</span>
+          <span>Bern-Washington-Bonn</span>
+        <!-- </b> -->
+      </a>
+    </div>
+    <div class="top-menu-right">
+        <a href="#Research">Research</a> |
+        <a href="#Teaching">Teaching</a> |
+        <a href="talks.html">Talks</a>
+    </div>
 </div>
-<!--%%%%%%%%% Header %%%%%%%%%%%-->
-<header>
-  <span onclick="w3_open()">
-    <i>
-      <img src="pics/menu-button1.png" style="width:35px;height:70px;position:fixed;margin-left:-10px;" class="image">
-    </i>
-  </span>
-</header>
+
+
+
+
+
 
 
 <!--********************************************************************-->
 <!--************************** !PAGE CONTENT! **************************-->
 <!--********************************************************************-->
-<div class="w3-main" style="margin-left:270px;align-items: center;justify-content: center;">
-  <br>
-
-  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-  <!--%%%%%%%%% Research %%%%%%%%%-->
-  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-  <div 
-    class="w3-container" style="max-width:800px;margin-bottom:12px;margin-right:40px;background-color:#e7e5e5;" id="research">
-    <h1>
-      <b>
-        Research
-      </b>
-    </h1>
-      <div class="text" style="width: 95%;">
-        <p>
-          (HEY) My  research focuses on properties of strongly interacting matter. The main directions of my research include Effective Field Theories, Lattice QCD, S-matrix theory, Phenomenology and statistics. You can find the full list of my publications (mostly accessible as open source) in <a target="_blank" class="blau"
-          href="https://inspirehep.net/literature?sort=mostrecent&size=250&page=1&q=a%20maxim%20mai&ui-citation-summary=true"><b>inspirehep.net</b></a>
-          
-          more details klick <a href="research.html" class="blue">here</a> or on pictures below for individual topics.
-        </p>
-        <!-- <a href="research.html#resonances"><img src="pics/3D-plot_square.png" style="width:30%" class="circle"></a>
-        <a href="research.html#resonances"><img src="pics/EFT.png" style="width:30%;" class="circle"></a>
-        <a href="research.html#LQCD"><img src="pics/Lattice.png" style="width:30%;" class="circle"></a>
-        <br>
-        <br>
-        <a href="research.html#resonances"><img src="pics/pheno.png" style="width:30%;" class="circle"></a>
-        <a href="research.html#CP"><img src="pics/CP.png" style="width:30%;" class="circle"></a>
-        <a href="research.html#ML"><img src="pics/ML.png" style="width:30%;" class="circle"></a> -->
-        <img src="pics/3D-plot_square.png" style="width:30%;pointer-events: none;" class="circle">
-        <img src="pics/EFT.png" style="width:30%;pointer-events: none;" class="circle">
-        <img src="pics/Lattice.png" style="width:30%;pointer-events: none;" class="circle">
-        <br>
-        <br>
-        <img src="pics/pheno.png" style="width:30%;pointer-events: none;" class="circle">
-        <img src="pics/CP.png" style="width:30%;pointer-events: none;" class="circle">
-        <img src="pics/ML.png" style="width:30%;pointer-events: none;" class="circle">
-      </div>
-    <br>
-
-
-
-    <h3>
-      <b>
-        Related links
-      </b>
-    </h3>
-      <a target="_blank" class="blue" href="http://pdglive.lbl.gov/Viewer.action">
-        <b>
-          Particle Data Group
-        </b>
-      </a> -- World Data Base for fundamental particles (open access)
-      <br>
-      <a target="_blank" class="blue" href="https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html"><b>Nuclides </b></a> -- Live Chart of Nuclides (open access)
-      <br>
-      <a target="_blank" class="blue" href="https://periodictable.com/index.html"><b>IsotopeData</b></a> -- Useful compilation of nuclear isotopes constants (open access)
-      <br>
-      <a target="_blank" class="blue" href="https://arxiv.org"> <b>arXiv.org</b></a> -- main research article server (open access)
-      <br>
-      <a target="_blank" class="blue" href="https://inspirehep.net"><b>iNSPIREhep</b></a> -- search platform for nuclear, hadron, high-energy papers (mostly open access)
-      <br>
-      <a target="_blank" class="blue" href="https://www.overleaf.com"><b>Overleaf</b></a> -- Online collaborative LaTeX Editor
-      <br>
-      <br>
-  </div>
-
-
+<div class="w3-main">
   <br>
   <br>
-
-
-
-  
-  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-  <!--%%%%%%%%% TALKS %%%%%%%%%-->
-  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-  <div class="w3-container w3-padding-large" style="max-width:800px;margin-bottom:32px;margin-right:40px;background-color:#e7e5e5;" id="talks">
-    <h1>
-      <b>
-        Talks
-      </b>
-    </h1>
-
-    <h3>
-      workshop/conferences/seminar organization
-    </h3>
-    
-
-    Bethe Forum - 2022:
-    <a target="_blank" class="blue" href="https://indico.hiskp.uni-bonn.de/event/37/">
-    <i>Multihadron dynamics in a box: A.D.2022</i></a>
-
-
-    <br>
-    Bethe Forum - 2019:
-    <a target="_blank" class="blue" href="https://indico.hiskp.uni-bonn.de/event/2/page/2-home">
-    <i>Multihadron dynamics in a box</i></a>
-    <br>
-    
-    DNP 2019 fall meeting:
-    <a target="_blank" class="blue" href="https://dnp2019.columbian.gwu.edu">
-    <i>Webpage</i></a>
-    <br>
-
-    JOINT GLUEX-PANDA WORKSHOP 2019:
-    <a target="_blank" class="blue" href="https://www.jlab.org/conference/gluex-panda2019">
-    <i>Webpage</i></a>
-    <br>
-
-    Theory HISKP Seminar Schedule:<a target="_blank" class="blue" href="https://indico.hiskp.uni-bonn.de/category/35/"><i>HISKP Theory</i></a>
-    <br>
-      
-    Nuclear Seminar Schedule GWU:<a target="_blank" class="blue" href="https://physics.columbian.gwu.edu/nuclear-physics-seminars"><i>GWU NUCLEAR</i></a>
-    <br>
-    
-    "Physikshow" of the University Bonn:<a target="_blank" class="blue" href="https://www.physikshow.uni-bonn.de//"><i>Webpage</i></a>
-  
-    <br>
-    <br>
-
-    <b>selection of recent talks:</b>
-    
-    <br>
-      <ul style="list-style-type:circle;line-height: 1.5em">
-
-
-        <li>
-          <a target="_blank" class="blue" href="talks/Seminar-TSINGHUA-2024.pdf">"Hadron resonances"</a> Seminar, Tsinghua University (Beijing, 09.2024)
-        </li>
-
-
-
-        <li>
-          <a target="_blank" class="blue" href="talks/RAC-MaximMai.pdf">Kernfusion</a> (Outreach talk in German, Rotaract Club Bonn, 08.2024)
-        </li>
-
-
-        <li>
-          <a target="_blank" class="blue" href="talks/Habilitation-MaximMai.pdf">Nuclear Fusion: Status and Progress</a> (Habilitation colloquium, University of Bonn, 2024)
-        </li>
-
-        <li>
-          <a target="_blank" class="blue" href="talks/2023-SPOOKYseminar-GWU.pdf">
-              HALLOWEEN SEMINAR AT THE GWU
-          </a>
-          (USA, 2023)
-        </li>
-        <li>
-          <a target="_blank" class="blue" href="talks/HADRON2023x-MaximMai.pdf">
-              HADRON'23 Conference
-          </a> (Italy, 2023)
-        </li>
-        <li>
-          <a target="_blank" class="blue" href="talks/INT2023-MaximMai.pdf">
-              INT workshop
-          </a> (USA, 2023)
-        </li>
-        <li>
-          <a target="_blank" class="blue" href="talks/Seminar-UMD-2022.pdf">
-              Seminar: University of Maryland
-          </a> (USA, 2022)
-        </li>
-        
-        <li>
-          <a target="_blank" class="blue" href="talks/NSTAR-2022.pdf">
-              NSTAR-2022 Conference
-          </a> (Italy, 2022)
-        </li>
-        <li>
-          <a target="_blank" class="blue" href="talks/Entropy-Riozome.pdf">Outreach talk on ENTROPY</a>
-          (Art/science event 
-          <a target="_blank" class="blue" href="http://www.rhizomedc.org/new-events/2017/11/2/entropy">
-            RHIZOME DC
-          </a>
-          
-          )
-        </li>
-        <li style="list-style-type:none;">
-          ...
-        </li>
-        <li style="list-style-type:none;">
-          more talks can be found <a href="talks.html" class="blue"><b>here</b></a>
-        </li>
-      
-      
-      
-      </ul>
-        
-
-      <br>
-  
-
-
-  </div>
   <br>
   <br>
 
@@ -273,195 +96,152 @@
 
 
 
-  <!--%%%%%%%%%%%%%%% TEACHING %%%%%%%%%%%%%%%-->
-  <div class="w3-container w3-padding-large" style="max-width:800px;margin-bottom:32px;margin-right:40px;background-color:#e7e5e5;" id="teaching">
-    <h1>
-      <b>
-        Teaching
-      </b>
-    </h1>
-
-    <!---->
-    <b>
-      Sommer 2024 - Advanced Theoretical Hadron Physics
-    </b>
-    <br>
-    >>
-    <a target="_blank" class="blue" href="https://ecampus.uni-bonn.de/goto.php?target=crs_3267764&client_id=ecampus">
-      <b>
-        eCampus lecture page
-      </b>
-    </a>
-    <br>
-    >> Lectures take place Wednesdays 9-12am(ct), in HISKP / Lecture hall 1, Nussallee 14-16
-    <br>
-    >> Group exercises will take place according to the polling on eCampus
-    <br>
-    <br>
-
-
-
-
-    <b>
-      Winter 2023/24 - Theoretical Hadron Physics
-    </b>
-    <br>
-    >>
-    <a target="_blank" class="blue" href="https://ecampus.uni-bonn.de/goto.php?target=crs_3075188&client_id=ecampus">
-      <b>
-        eCampus lecture page
-      </b>
-    </a>
-    <br>
-    >> Lectures take place Wednesdays 9-12am(ct), in HISKP / Lecture hall 1, Nussallee 14-16
-    <br>
-    >> Group exercises will take place according to the polling on eCampus
-    <br>
-    <br>
-
-    <b>
-      REYES 2023 -- Mentoring program 
-    </b>
-    <a target="_blank" class="blue" href="https://physics.berkeley.edu/visiting-students/reyes-remote-experience-young-engineers-and-scientists">
-      <b>[link to registration/official page]
-      </b>
-    </a>
-    <br>
-    >> <b>``Crash course on model building and fits for particle scattering''</b>
-    <a target="_blank" class="blue" href="teaching/REYES-P28.pdf"><i><b>Topics overview</i></b></a>
-    <br>>> Zoom meetings Tuesday 2pm-5pm CEST 
-    <br>>> Reports due Monday 12am CEST
-    <br><br>
-
-
-
-    <b>Summer 2023 - Advanced Theoretical Hadron Physics</b>
-    <br>>> <a target="_blank" class="blue" href="https://ecampus.uni-bonn.de/goto.php?target=crs_2928103&client_id=ecampus"><b>eCampus lecture page</b></a>
-    <br>>> Lectures take place Wednesdays 9-12am(ct), in HISKP / SR1, Nussallee 14-16
-    <br>>> Group exercises will take place accoding to the polling on eCampus
-    <br><br>
-
-
-    <b>Winter 2022/23 - Advanced Quantum Field Theory</b>
-    <br>>> <a target="_blank" class="blue" href="https://ecampus.uni-bonn.de/goto_ecampus_crs_2727349.html"><b>eCampus lecture page</b></a>
-    <br>>> Lectures take place Wednesdays 9-12am(ct), in HISKP SR I, Nussallee 14-16
-    <br>>> Group exercises will take place accoding to the polling on eCampus
-    <br><br>
-
-    <b>Summer 2022 - Quantum Field Theory</b>
-    <br>>> <a target="_blank" class="blue" href="https://ecampus.uni-bonn.de/goto_ecampus_crs_2547284.html"><b>eCampus lecture page</b></a>
-    <br>>> Lectures take place Wednesdays 9-12am(ct), in HISKP / HS, Nussallee 14-16
-    <br>>> Group exercises will take place accoding to the polling on eCampus
-    <br><br>
-
-    <b>Summer 2019 - General Physics II 1012</b>
-    <br>>> Lectures take place at Corcoran 203 MTWR 16:00-17:30
-    <br>>> Labs take place at Corcoran B03 MW 18:10-20:30
-    <br>>> Textbook: Knight et al., College Physics, 4e [ISBN-13: 978-0134609034]
-    <br>>> Homeworks are taken from the book as announced in the lectures
-    <br>>> Daily open book quizzes:
-    <br>>>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 1.pdf"><b>QUIZ 1</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 2.pdf"><b>QUIZ 2</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 3.pdf"><b>QUIZ 3</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 4.pdf"><b>QUIZ 4</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 5.pdf"><b>QUIZ 5</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 6.pdf"><b>QUIZ 6</b></a>
-    <br>>>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 7.pdf"><b>QUIZ 7</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 8.pdf"><b>QUIZ 8</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 9.pdf"><b>QUIZ 9</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 10.pdf"><b>QUIZ 10</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 11.pdf"><b>QUIZ 11</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 12.pdf"><b>QUIZ 12</b></a>
-    <br>>>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 13.pdf"><b>QUIZ 13</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 14.pdf"><b>QUIZ 14</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 15.pdf"><b>QUIZ 15</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 16.pdf"><b>QUIZ 16</b></a>
-    <a target="_blank" class="blue" href="teaching/QUIZ NR 17.pdf"><b>QUIZ 17</b></a>
-
-    <br><br>
-    <b>Fall 2017 - Graduate course on Quantum Field Theory</b>
-    <br>>> Self-learning course following the text book by Peskin/Schroeder.
-    <br>>>
-    <a target="_blank" class="blue" href="teaching/Mind-Atlas.pdf">
-    <i><b>Collection of mind-maps</i></b></a> (thanks to all participants)
-    <br>
-
-
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
   <!--%%%%%%%%% About Me %%%%%%%%%-->
-  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <div class="w3-container" id="#home">
 
-
-
-  <div class="w3-container" style="max-width:800px;margin-bottom:2px;margin-right:40px;background-color:#e7e5e5;"id="about">
-    <h1><b>About Me</b></h1>
-
-    <div class="containerAI">
-      <img src="pics/profil-2.jpg" alt="Your Image" class="image" style="width:35%;pointer-events: none;" >
-      <div class="text" style="width: 65%;">
-        <p> 
-          I am a theoretical physicist in nuclear/hadron physics. Currently, I am working as a Heisenberg Fellow at the <a target="_blank" class="blue"  href="https://www.itp.unibe.ch">Albert Einstein Center at the University of Bern</a>, and as a Research Professor at <a target="_blank" class="blue"  href="https://physics.columbian.gwu.edu/">The George Washington University</a>. My main interest include origin of excited states of matter, Quantum Chromodynamics in continuum and on the lattice, Effective Field Theories, Quantization conditions, Machine learning and model selection applications.
-          <br>
-          <br>
-          Feel free to contact me for any questions to my research or for teaching materials.
+    <!-- <div class="containerAI"> -->
+      <div class="text" style="width: 95%;">
+          <h1>Maxim Mai</h1>
         </p>
+        <br>
+        <br>   
+        Hi and welcome to my homepage. 
+        <br>
+        <br>    
+        <h4>A bit about me</h4>      
+        <div class="text" style="
+          width: 100%;         
+          display: flex; 
+          align-items: flex-start;
+          gap: 20px;
+          margin: 0;">
+          I am a Heisenberg Fellow at the Albert Einstein Center at the University of Bern. Additionally to this, I am an adjunct Research Professor at The George Washington University and a Privatdozent at the University of Bonn.
+          <br>    
+          <br>    
+          My main interests include the nature of excited states of matter, non-perturbative Quantum Chromodynamics, Lattice QCD, Effective Field Theories, Quantization Conditions, Machine/model selection applications. For more details click on the images below or go to the research section.
+          <br>    
+          <div class="image">
+            <img src="pics/profil-2.jpg" style="width: 200px;gap:20px">
+          </div>   
+        </div>
+        <br> 
+        <a href="#research" style="text-decoration:none;padding:2px;">
+          <img src="pics/3D-plot_square.png" class="circle" style="width:15%;padding:2px;">
+        </a>
+        <a href="#research" style="text-decoration:none;padding:2px;">
+          <img src="pics/EFT.png" class="circle" style="width:15%;padding:2px;">
+        </a>
+        <a href="#research" style="text-decoration:none;padding:2px;">
+          <img src="pics/Lattice.png" class="circle" style="width:15%;padding:2px;">
+        </a>
+        <a href="#research" style="text-decoration:none;padding:2px;">
+          <img src="pics/pheno.png" class="circle" style="width:15%;padding:2px;">
+        </a>
+        <a href="#research" style="text-decoration:none;padding:2px;">
+          <img src="pics/CP.png" class="circle" style="width:15%;padding:2px;">
+        </a>
+        <a href="#research" style="text-decoration:none;padding:2px;">
+            <img src="pics/ML.png" class="circle" style="width:15%;padding:2px;">
+        </a>
+        <br>
       </div>
-    </div>
-  <h3>
-    <b>
-      Contact
-    </b>
-  </h3>
-  maximmai@gwu.edu
-  <br>
-  <div itemscope itemtype="https://schema.org/Person">
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>    
+    Feel free to contact me for any questions to my research or for teaching materials.
+    <h4>Contact</h4>
+    Universität Bern<br>
+    Gesellschaftsstrasse 2<br>
+    GS 233<br>
+    maxim.mai[at]faculty.unibe.ch<br><br>
     <a target="_blank" class="blue" href="https://orcid.org/0000-0003-0119-0718">
       https://orcid.org/0000-0003-0119-0718
     </a>
     <br>
     <br>
   </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!--%%%%%%%%% About Me %%%%%%%%%-->
+  <div class="w3-container">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>    
+    <br>
+    <br>    
+    <br>
+    <br>
+  </div>
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
 
-
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32" style="max-width:800px;background-color:#e7e5e5;margin-right:40px">
+  <!-- FOOTER -->
+  <!-- <div class="footer">
     Ⓒ2024 by Maxim Mai created with
     <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </footer>
+  </div> -->
+  <!-- FOOTER -->
 
 
-</div>
+
 
 
 
