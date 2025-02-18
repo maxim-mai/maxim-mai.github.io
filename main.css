@@ -191,11 +191,15 @@ ul li {
     text-align: right;
   }
   .top-menu-right a {
+    /* background-color: lightgray; */
     color: rgb(0, 0, 0);
     text-align: right;
     text-decoration: none;
-    padding: 5px 5px;
+    padding: 1px 1px;
     font-size: 16px;
+    /* transform: rotate(-45.5deg);
+    transform-origin: left top;  Adjust the rotation origin if needed 
+    display: inline-block; Ensures the text rotates properly */
   }
   .top-menu-left {
     display:flex;
