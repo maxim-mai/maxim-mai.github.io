@@ -255,7 +255,7 @@ ul li {
   .w3-sidebar.w3-collapse{display:block!important}
   .w3-animate-left{position:relative;animation:animateleft 0.5s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
   .w3-container{
-    max-width:900px;
+    max-width:800px;
     padding:0px 10px;
     background-color:#ffffff;
     border: 1px solid #c6c6c6; /* Thin gray line at the bottom */
