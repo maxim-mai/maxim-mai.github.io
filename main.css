@@ -157,6 +157,28 @@ img:hover {
 }
 
 
+  /************** Styling for the blockquote **************/
+  blockquote {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+    text-align: right;
+    margin-right: 0px;
+    /* padding: 20px 40px; */
+    /* border-left: 8px solid #007BFF;
+    background-color: #f9f9f9;
+    line-height: 1.6; */
+}
+/* Styling for the author attribution */
+blockquote footer {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: normal;
+    color: #777;
+    text-align: right;
+}
 
 
 /************** Lists **************/
