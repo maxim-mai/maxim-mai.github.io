@@ -64,6 +64,11 @@ background-color: transparent;
 text-decoration: none;
 text-decoration: underline;
 }
+a:link,
+a:visited {
+  color: blue;
+}
+
 
 
 
@@ -365,3 +370,4 @@ ul li {
   }
 }
 /* %%%%%%%%%%%%%%%%%%%%%% END SLIDER %%%%%%%%%%%%%%%%%%%%%% */
+
