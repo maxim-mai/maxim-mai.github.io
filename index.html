@@ -209,25 +209,6 @@
 
 
 .
-  <!-- Placeholder for counter -->
-  <p id="visitor-text">Loading counter...</p>
-
-  <!-- Visitor counter script -->
-  <script>
-    // Replace "myname.github.io" with your GitHub Pages domain
-    fetch('https://api.countapi.xyz/hit/maxim-mai.github.io/visits')
-      .then(res => res.json())
-      .then(res => {
-        document.getElementById('visitor-text').innerText =
-          "You are visitor #" + res.value;
-      })
-      .catch(err => {
-        console.error("Counter error:", err);
-        document.getElementById('visitor-text').innerText =
-          "Counter unavailable";
-      });
-  </script>
-.
 
 
 
