@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+
+
+
 <!-- MATHJAX INCLUSION -->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -215,8 +218,16 @@
   <br>
   <br>
   <br>
+<p id="visitor-text"></p>
 
-
+<script>
+fetch('https://api.countapi.xyz/hit/username.github.io/visits')
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('visitor-text').innerText =
+      "You are visitor #" + res.value;
+  });
+</script>
 
 
 </div>
