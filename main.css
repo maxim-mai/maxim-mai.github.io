@@ -20,6 +20,21 @@ body::before {
 
 
 
+    .old-button {
+      background-color: #c0c0c0; /* classic gray */
+      border: 2px outset #fff;
+      padding: 6px 12px;
+      font-family: Tahoma, Verdana, sans-serif;
+      font-size: 14px;
+      color: black;
+      cursor: pointer;
+    }
+
+    .old-button:active {
+      border: 2px inset #fff; /* pressed look */
+      background-color: #a9a9a9;
+    }
+
 
  /***** Container holding the image and the text *****/
 /* .container {
